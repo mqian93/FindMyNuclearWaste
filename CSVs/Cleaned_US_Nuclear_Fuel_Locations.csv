@@ -1,0 +1,83 @@
+Site,State,Storage,Type,Latitude,Longitude
+Argonne National Lab,Illinois,Dry,Storage Facility,41.72,-87.9783
+Savannah River Site,Georgia,Dry/Wet,Storage Facility,33.3403,-81.7453
+BWX Technologies - Fuel Cycle Facility,Virginia,Wet,Other,37.403611,-79.77
+Point Beach,Wisconsin,Dry/Wet,NPP,44.2811,-87.5367
+Kewaunee,Wisconsin,Dry/Wet,NPP,44.3422,-87.5361
+Columbia Generating Station,Washington,Dry/Wet,NPP,46.4711,-119.3339
+Surry,Virginia,Dry/Wet,NPP,37.1656,-76.6978
+North Anna,Virginia,Dry/Wet,NPP,38.0606,-77.7894
+Vermont Yankee,Vermont,Dry/Wet,NPP,42.7789,-72.5131
+South Texas,Texas,Wet,NPP,28.7956,-96.0489
+Comanche Peak,Texas,Dry/Wet,NPP,32.2983,-97.785
+Watts Bar,Tennessee,Wet,NPP,35.6028,-84.7894
+Sequoyah,Tennessee,Dry/Wet,NPP,35.2264,-85.0917
+Summer,South Carolina,Dry/Wet,NPP,34.2986,-81.3147
+Robinson,South Carolina,Dry/Wet,NPP,34.4028,-80.1583
+Oconee,South Carolina,Dry/Wet,NPP,34.7939,-82.8981
+Catawba,South Carolina,Dry/Wet,NPP,35.0517,-81.07
+Three Mile Island,Pennsylvania,Wet,NPP,40.1539,-76.7247
+Susqehanna,Pennsylvania,Dry/Wet,NPP,41.0889,-76.1489
+Peach Bottom,Pennsylvania,Dry/Wet,NPP,39.7583,-76.2681
+Limerick,Pennsylvania,Dry/Wet,NPP,40.2267,-75.5872
+Beaver Valley,Pennsylvania,Dry/Wet,NPP,40.6233,-80.4306
+Perry,Ohio,Dry/Wet,NPP,41.8008,-81.1433
+Davis-Besse,Ohio,Dry/Wet,NPP,41.5967,-83.0864
+Shearon Harris,North Carolina,Wet,NPP,35.6333,-78.955
+McGuire,North Carolina,Dry/Wet,NPP,35.4325,-80.9483
+Brunswick,North Carolina,Dry/Wet,NPP,33.9583,-78.0103
+Nine Mile Point,New York,Dry/Wet,NPP,43.5208,-76.4069
+Indian Point,New York,Dry/Wet,NPP,41.2697,-73.9522
+Ginna,New York,Dry/Wet,NPP,43.2778,-77.31
+FitzPatrick,New York,Dry/Wet,NPP,43.5233,-76.3983
+Oyster Creek,New Jersey,Dry/Wet,NPP,39.8147,-74.205
+Hope Creek/Salem,New Jersey,Dry/Wet,NPP,39.4678,-75.5381
+Seabrook,New Hampshire,Dry/Wet,NPP,42.8989,-70.8508
+Fort Calhoun,Nebraska,Dry/Wet,NPP,41.5203,-96.077222
+Cooper,Nebraska,Dry/Wet,NPP,40.3619,-95.6414
+Callaway,Missouri,Dry/Wet,NPP,38.761667,-91.78
+Grand Gulf,Mississippi,Dry/Wet,NPP,32.0072,-91.0478
+Prairie Island,Minnesota,Dry/Wet,NPP,44.6217,-92.6331
+Monticello,Minnesota,Dry/Wet,NPP,45.3336,-93.8492
+Palisades,Michigan,Dry/Wet,NPP,42.3228,-86.3144
+Fermi,Michigan,Dry/Wet,NPP,41.9628,-83.2575
+D.C. Cook,Michigan,Dry/Wet,NPP,41.975556,-86.565278
+Pilgrim,Massachusetts,Dry/Wet,NPP,41.945,-70.5783
+Calvert Cliffs,Maryland,Dry/Wet,NPP,38.4319,-76.4422
+Waterford,Louisiana,Dry/Wet,NPP,29.9953,-90.4711
+River Bend,Louisiana,Dry/Wet,NPP,30.756667,-91.333333
+Wolf Creek,Kansas,Wet,NPP,38.2389,-95.6889
+Duane Arnold,Iowa,Dry/Wet,NPP,42.1006,-91.7772
+Zion,Illinois,Dry,NPP,42.4461,-87.8028
+Quad Cities,Illinois,Dry/Wet,NPP,41.7264,-90.31
+La Salle,Illinois,Dry/Wet,NPP,41.2456,-88.6692
+Dresden,Illinois,Dry/Wet,NPP,41.3894,-88.2533
+Clinton,Illinois,Wet,NPP,40.1722,-88.835
+Byron,Illinois,Dry/Wet,NPP,42.0742,-89.2819
+Braidwood,Illinois,Dry/Wet,NPP,41.2436,-88.2292
+Vogtle,Georgia,Dry/Wet,NPP,33.1433,-81.7606
+Hatch,Georgia,Dry/Wet,NPP,31.9342,-82.3439
+Turkey Point,Florida,Dry/Wet,NPP,25.4342,-80.3306
+Saint Lucie,Florida,Dry/Wet,NPP,27.3486,-80.2464
+Crystal River,Florida,Wet,NPP,28.9575,-82.5633
+Millstone,Connecticut,Dry/Wet,NPP,41.3119,-72.1686
+San Onofre,California,Wet,NPP,33.3689,-117.555
+Diablo Canyon,California,Dry/Wet,NPP,35.2108,-120.8561
+Arkansas Nuclear,Arkansas,Dry/Wet,NPP,35.3103,-93.2314
+Palo Verde,Arizona,Dry/Wet,NPP,33.4025,-112.8556
+Farley,Alabama,Dry/Wet,NPP,31.2231,-85.1133
+Browns Ferry,Alabama,Dry/Wet,NPP,34.7039,-87.1186
+Lacrosse,Wisconsin,Dry,ISFSI,43.56,-91.2314
+Trojan,Oregon,Dry,ISFSI,46.0383,-122.885
+Big Rock Point,Michigan,Dry,ISFSI,45.3589,-85.1972
+Yankee Row,Massachusetts,Dry,ISFSI,42.7292,-72.9253
+Maine Yankee,Maine,Dry,ISFSI,43.9506,-69.6958
+Morris,Illinois,Wet,ISFSI,41.3897,-88.2681
+Haddam Neck,Connecticut,Dry,ISFSI,41.4822,-72.4983
+Fort St. Vrain,Colorado,Dry,ISFSI,40.2456,-104.8775
+Rancho Seco,California,Dry,ISFSI,38.3453,-121.1217
+Humboldt Bay,California,Dry,ISFSI,40.7411,-124.2089
+Hanford Site,Washington,Dry/Wet,Government Facility/Multiple,46.6475,-119.5986
+Oak Ridge Reservation,Tennessee,Wet,Government Facility/Multiple,35.93,-84.31
+Sandia National Lab,New Mexico,Dry,Government Facility/Multiple,35.06,-105.5358
+Idaho National Lab,Idaho,Dry/Wet,Government Facility/Multiple,43.52,-112.5986
