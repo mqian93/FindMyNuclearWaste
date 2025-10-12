@@ -15,7 +15,7 @@ response=requests.post('https://api.geocod.io/v1.9/reverse',
                     },
                     json=coordinates)
 data=response.json()
-results=data['results'] 
+results=data['results'][:50]
 
 
 rows=[]
