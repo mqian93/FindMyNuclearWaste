@@ -15,55 +15,73 @@ response=requests.post('https://api.geocod.io/v1.9/reverse',
                     },
                     json=coordinates)
 data=response.json()
-results=data['results'][:50]
+results=data['results']
 
 
-rows=[]
+rows = []
+
 for result in data['results']:
-    #basic info 
-    query=result['query']
-    high_acc=result['response']['results'][0]
-
-    #fields aka sources of info
-    fields=high_acc['fields']
-    census24=fields['census']['2024']
-    acs=fields['acs']
-
-    row={ #census identifiers
-        'metro_area_name': census24['metro_micro_statistical_area']['name'],
-        'metro_area_code': census24['metro_micro_statistical_area']['area_code'],
-        'metro_area_type': census24['metro_micro_statistical_area']['type'],
-        'statefips': census24['state_fips'],
-        'countyfips': census24['county_fips'],
-        'tractcode': census24['tract_code'],
-        'blockcode': census24['block_code'],
-        'full_fips': census24['full_fips'],
-
-        #housing
-        'total_houses': acs['housing']['Number of housing units']['Total']['value'],
-        'occupied_percent': acs['housing']['Occupancy status']['Occupied']['percentage'],
-        'house_value_median': acs['housing']['Median value of owner-occupied housing units']['Total']['value'],
-        'household_income_median': acs['economics']['Median household income']['Total']['value'],
-
-        #agesex
-        'age_median': acs['demographics']['Median age']['Total']['value'],
-        'total_population': acs['demographics']['Sex']['Total']['value'],
-        'malepercent': acs['demographics']['Sex']['Male']['percentage'],
-        'femalepercent': acs['demographics']['Sex']['Female']['percentage'],
+    query = result['query']
+    
+    try:
+        high_acc = result['response']['results'][0]
+        fields = high_acc.get('fields', {})
         
-        #raceethnicity
-        'nonhispanic_percent': acs['demographics']['Race and ethnicity']['Not Hispanic or Latino']['percentage'],
-        'hispanic_percent': acs['demographics']['Race and ethnicity']['Hispanic or Latino']['percentage'],
-        'white_percent': acs['demographics']['Race and ethnicity']['Not Hispanic or Latino: White alone']['percentage'],
-        'black_percent': acs['demographics']['Race and ethnicity']['Not Hispanic or Latino: Black or African American alone']['percentage'],
-        'asian_percent': acs['demographics']['Race and ethnicity']['Not Hispanic or Latino: Asian alone']['percentage'],
-        'pacificislander_percent': acs['demographics']['Race and ethnicity']['Not Hispanic or Latino: Native Hawaiian and Other Pacific Islander alone']['percentage'],
-        'native_percent': acs['demographics']['Race and ethnicity']['Not Hispanic or Latino: American Indian and Alaska Native alone']['percentage'],
-    }
-
-    rows.append(row)
+        # location of data
+        acs = fields.get('acs', {})
+        census = fields.get('census', {})
+        census24 = census.get('2024', {})
+        metro = census24.get('metro_micro_statistical_area', {})
+        location = high_acc.get('location', {})
+        
+        row = {
+            # location
+            'query_coords': query,
+            'latitude': location.get('lat'),
+            'longitude': location.get('lng'),
+            'formatted_address': high_acc.get('formatted_address'),
+            
+            # census identifier
+            'metro_area_name': metro.get('name'),
+            'metro_area_code': metro.get('area_code'),
+            'metro_area_type': metro.get('type'),
+            'statefips': census24.get('state_fips'),
+            'countyfips': census24.get('county_fips'),
+            'tractcode': census24.get('tract_code'),
+            'blockcode': census24.get('block_code'),
+            'full_fips': census24.get('full_fips'),
+            
+            # housing
+            'total_houses': acs.get('housing', {}).get('Number of housing units', {}).get('Total', {}).get('value'),
+            'occupied_percent': acs.get('housing', {}).get('Occupancy status', {}).get('Occupied', {}).get('percentage'),
+            'house_value_median': acs.get('housing', {}).get('Median value of owner-occupied housing units', {}).get('Total', {}).get('value'),
+            'household_income_median': acs.get('economics', {}).get('Median household income', {}).get('Total', {}).get('value'),
+            
+            # agesex
+            'age_median': acs.get('demographics', {}).get('Median age', {}).get('Total', {}).get('value'),
+            'total_population': acs.get('demographics', {}).get('Sex', {}).get('Total', {}).get('value'),
+            'malepercent': acs.get('demographics', {}).get('Sex', {}).get('Male', {}).get('percentage'),
+            'femalepercent': acs.get('demographics', {}).get('Sex', {}).get('Female', {}).get('percentage'),
+            
+            # race/etn
+            'nonhispanic_percent': acs.get('demographics', {}).get('Race and ethnicity', {}).get('Not Hispanic or Latino', {}).get('percentage'),
+            'hispanic_percent': acs.get('demographics', {}).get('Race and ethnicity', {}).get('Hispanic or Latino', {}).get('percentage'),
+            'white_percent': acs.get('demographics', {}).get('Race and ethnicity', {}).get('Not Hispanic or Latino: White alone', {}).get('percentage'),
+            'black_percent': acs.get('demographics', {}).get('Race and ethnicity', {}).get('Not Hispanic or Latino: Black or African American alone', {}).get('percentage'),
+            'asian_percent': acs.get('demographics', {}).get('Race and ethnicity', {}).get('Not Hispanic or Latino: Asian alone', {}).get('percentage'),
+            'pacificislander_percent': acs.get('demographics', {}).get('Race and ethnicity', {}).get('Not Hispanic or Latino: Native Hawaiian and Other Pacific Islander alone', {}).get('percentage'),
+            'native_percent': acs.get('demographics', {}).get('Race and ethnicity', {}).get('Not Hispanic or Latino: American Indian and Alaska Native alone', {}).get('percentage'),
+        }
+        
+        rows.append(row)
+        
+    except Exception as e:
+        # Only skip if there's a catastrophic error
+        print(f"Skipping {query} - {type(e).__name__}: {e}")
+        continue
 
 cleandf=pd.DataFrame(rows)
+cleandf.to_csv('GeocodioIncompleteClean.csv')
 
 
 
