@@ -1,83 +1,83 @@
-Site,State,Storage,Type,Latitude,Longitude
-Argonne National Lab,Illinois,Dry,Storage Facility,41.72,-87.9783
-Savannah River Site,Georgia,Dry/Wet,Storage Facility,33.3403,-81.7453
+Site,State,Storage,Type,Latitude,Longitude,Dry_Assy,Dry_IU,Casks,Pool_Assy,Pool_IU,Site_Assy,Site_IU
+Argonne National Lab,Illinois,Dry,Storage Facility,41.72,-87.9783,,,,,,,
+Savannah River Site,Georgia,Dry/Wet,Storage Facility,33.3403,-81.7453,,,,,,,
 BWX Technologies - Fuel Cycle Facility,Virginia,Wet,Other,37.403611,-79.77
-Point Beach,Wisconsin,Dry/Wet,NPP,44.2811,-87.5367
-Kewaunee,Wisconsin,Dry/Wet,NPP,44.3422,-87.5361
-Columbia Generating Station,Washington,Dry/Wet,NPP,46.4711,-119.3339
-Surry,Virginia,Dry/Wet,NPP,37.1656,-76.6978
-North Anna,Virginia,Dry/Wet,NPP,38.0606,-77.7894
-Vermont Yankee,Vermont,Dry/Wet,NPP,42.7789,-72.5131
-South Texas,Texas,Wet,NPP,28.7956,-96.0489
-Comanche Peak,Texas,Dry/Wet,NPP,32.2983,-97.785
-Watts Bar,Tennessee,Wet,NPP,35.6028,-84.7894
-Sequoyah,Tennessee,Dry/Wet,NPP,35.2264,-85.0917
-Summer,South Carolina,Dry/Wet,NPP,34.2986,-81.3147
-Robinson,South Carolina,Dry/Wet,NPP,34.4028,-80.1583
-Oconee,South Carolina,Dry/Wet,NPP,34.7939,-82.8981
-Catawba,South Carolina,Dry/Wet,NPP,35.0517,-81.07
-Three Mile Island,Pennsylvania,Wet,NPP,40.1539,-76.7247
-Susqehanna,Pennsylvania,Dry/Wet,NPP,41.0889,-76.1489
-Peach Bottom,Pennsylvania,Dry/Wet,NPP,39.7583,-76.2681
-Limerick,Pennsylvania,Dry/Wet,NPP,40.2267,-75.5872
-Beaver Valley,Pennsylvania,Dry/Wet,NPP,40.6233,-80.4306
-Perry,Ohio,Dry/Wet,NPP,41.8008,-81.1433
-Davis-Besse,Ohio,Dry/Wet,NPP,41.5967,-83.0864
-Shearon Harris,North Carolina,Wet,NPP,35.6333,-78.955
-McGuire,North Carolina,Dry/Wet,NPP,35.4325,-80.9483
-Brunswick,North Carolina,Dry/Wet,NPP,33.9583,-78.0103
-Nine Mile Point,New York,Dry/Wet,NPP,43.5208,-76.4069
-Indian Point,New York,Dry/Wet,NPP,41.2697,-73.9522
-Ginna,New York,Dry/Wet,NPP,43.2778,-77.31
-FitzPatrick,New York,Dry/Wet,NPP,43.5233,-76.3983
-Oyster Creek,New Jersey,Dry/Wet,NPP,39.8147,-74.205
-Hope Creek/Salem,New Jersey,Dry/Wet,NPP,39.4678,-75.5381
-Seabrook,New Hampshire,Dry/Wet,NPP,42.8989,-70.8508
-Fort Calhoun,Nebraska,Dry/Wet,NPP,41.5203,-96.077222
-Cooper,Nebraska,Dry/Wet,NPP,40.3619,-95.6414
-Callaway,Missouri,Dry/Wet,NPP,38.761667,-91.78
-Grand Gulf,Mississippi,Dry/Wet,NPP,32.0072,-91.0478
-Prairie Island,Minnesota,Dry/Wet,NPP,44.6217,-92.6331
-Monticello,Minnesota,Dry/Wet,NPP,45.3336,-93.8492
-Palisades,Michigan,Dry/Wet,NPP,42.3228,-86.3144
-Fermi,Michigan,Dry/Wet,NPP,41.9628,-83.2575
-D.C. Cook,Michigan,Dry/Wet,NPP,41.975556,-86.565278
-Pilgrim,Massachusetts,Dry/Wet,NPP,41.945,-70.5783
-Calvert Cliffs,Maryland,Dry/Wet,NPP,38.4319,-76.4422
-Waterford,Louisiana,Dry/Wet,NPP,29.9953,-90.4711
-River Bend,Louisiana,Dry/Wet,NPP,30.756667,-91.333333
-Wolf Creek,Kansas,Wet,NPP,38.2389,-95.6889
-Duane Arnold,Iowa,Dry/Wet,NPP,42.1006,-91.7772
-Zion,Illinois,Dry,NPP,42.4461,-87.8028
-Quad Cities,Illinois,Dry/Wet,NPP,41.7264,-90.31
-La Salle,Illinois,Dry/Wet,NPP,41.2456,-88.6692
-Dresden,Illinois,Dry/Wet,NPP,41.3894,-88.2533
-Clinton,Illinois,Wet,NPP,40.1722,-88.835
-Byron,Illinois,Dry/Wet,NPP,42.0742,-89.2819
-Braidwood,Illinois,Dry/Wet,NPP,41.2436,-88.2292
-Vogtle,Georgia,Dry/Wet,NPP,33.1433,-81.7606
-Hatch,Georgia,Dry/Wet,NPP,31.9342,-82.3439
-Turkey Point,Florida,Dry/Wet,NPP,25.4342,-80.3306
-Saint Lucie,Florida,Dry/Wet,NPP,27.3486,-80.2464
-Crystal River,Florida,Wet,NPP,28.9575,-82.5633
-Millstone,Connecticut,Dry/Wet,NPP,41.3119,-72.1686
-San Onofre,California,Wet,NPP,33.3689,-117.555
-Diablo Canyon,California,Dry/Wet,NPP,35.2108,-120.8561
-Arkansas Nuclear,Arkansas,Dry/Wet,NPP,35.3103,-93.2314
-Palo Verde,Arizona,Dry/Wet,NPP,33.4025,-112.8556
-Farley,Alabama,Dry/Wet,NPP,31.2231,-85.1133
-Browns Ferry,Alabama,Dry/Wet,NPP,34.7039,-87.1186
-Lacrosse,Wisconsin,Dry,ISFSI,43.56,-91.2314
-Trojan,Oregon,Dry,ISFSI,46.0383,-122.885
-Big Rock Point,Michigan,Dry,ISFSI,45.3589,-85.1972
-Yankee Row,Massachusetts,Dry,ISFSI,42.7292,-72.9253
-Maine Yankee,Maine,Dry,ISFSI,43.9506,-69.6958
-Morris,Illinois,Wet,ISFSI,41.3897,-88.2681
-Haddam Neck,Connecticut,Dry,ISFSI,41.4822,-72.4983
-Fort St. Vrain,Colorado,Dry,ISFSI,40.2456,-104.8775
-Rancho Seco,California,Dry,ISFSI,38.3453,-121.1217
-Humboldt Bay,California,Dry,ISFSI,40.7411,-124.2089
-Hanford Site,Washington,Dry/Wet,Government Facility/Multiple,46.6475,-119.5986
-Oak Ridge Reservation,Tennessee,Wet,Government Facility/Multiple,35.93,-84.31
-Sandia National Lab,New Mexico,Dry,Government Facility/Multiple,35.06,-105.5358
-Idaho National Lab,Idaho,Dry/Wet,Government Facility/Multiple,43.52,-112.5986
+Point Beach,Wisconsin,Dry/Wet,NPP,44.2811,-87.5367,1694,643.09,56,1134,443.57,2828,1086.66
+Kewaunee,Wisconsin,Dry/Wet,NPP,44.3422,-87.5361,1335,518.7,38,0,0,1335,518.7
+Columbia Generating Station,Washington,Dry/Wet,NPP,46.4711,-119.3339,3672,645.63,54,1192,216.19,4864,861.82
+Surry,Virginia,Dry/Wet,NPP,37.1656,-76.6978,2824,1295.01,97,830,380.23,3654,1675.24
+North Anna,Virginia,Dry/Wet,NPP,38.0606,-77.7894,2397,1111.67,74,1232,569.17,3629,1680.84
+Vermont Yankee,Vermont,Dry/Wet,NPP,42.7789,-72.5131,3880,705.66,58,0,0,3880,705.66
+South Texas,Texas,Wet,NPP,28.7956,-96.0489,814,436.21,22,2423,1296.93,3237,1733.14
+Comanche Peak,Texas,Dry/Wet,NPP,32.2983,-97.785,1728,720.15,54,1901,808.06,3629,1528.21
+Watts Bar,Tennessee,Wet,NPP,35.6028,-84.7894,962,443.26,26,790,363.18,1752,806.44
+Sequoyah,Tennessee,Dry/Wet,NPP,35.2264,-85.0917,2370,1086.12,70,1548,704.19,3918,1790.31
+Summer,South Carolina,Dry/Wet,NPP,34.2986,-81.3147,444,188.81,12,1256,535.78,1700,724.59
+Robinson,South Carolina,Dry/Wet,NPP,34.4028,-80.1583,800,346.42,39,302,128.6,1102,475.02
+Oconee,South Carolina,Dry/Wet,NPP,34.7939,-82.8981,4080,1907.35,170,1455,695.04,5535,2602.39
+Catawba,South Carolina,Dry/Wet,NPP,35.0517,-81.07,1686,757.25,54,2076,929.08,3762,1686.33
+Three Mile Island,Pennsylvania,Wet,NPP,40.1539,-76.7247,1663,786.49,46,0,0,1663,786.49
+Susqehanna,Pennsylvania,Dry/Wet,NPP,41.0889,-76.1489,7672,1352.67,127,3809,674.47,11481,2027.14
+Peach Bottom,Pennsylvania,Dry/Wet,NPP,39.7583,-76.2681,7324,1322.42,104,5478,992.6,12802,2315.02
+Limerick,Pennsylvania,Dry/Wet,NPP,40.2267,-75.5872,3889,686.45,61,6166,1118.79,10055,1805.24
+Beaver Valley,Pennsylvania,Dry/Wet,NPP,40.6233,-80.4306,740,342.16,20,2374,1096.19,3114,1438.35
+Perry,Ohio,Dry/Wet,NPP,41.8008,-81.1433,1877,340.15,27,3055,550.52,4932,890.67
+Davis-Besse,Ohio,Dry/Wet,NPP,41.5967,-83.0864,496,238.02,15,1014,481.96,1510,719.98
+Shearon Harris,North Carolina,Wet,NPP,35.6333,-78.955,0,0,0,6417,1704.32,6417,1704.32
+McGuire,North Carolina,Dry/Wet,NPP,35.4325,-80.9483,2287,1023.87,73,2002,910.7,4289,1934.57
+Brunswick,North Carolina,Dry/Wet,NPP,33.9583,-78.0103,3172,561.35,52,2146,470.57,5318,1031.92
+Nine Mile Point,New York,Dry/Wet,NPP,43.5208,-76.4069,3330,588.36,50,5706,1019.38,9036,1607.74
+Indian Point,New York,Dry/Wet,NPP,41.2697,-73.9522,2443,1070.01,77,1558,706.61,4001,1776.62
+Ginna,New York,Dry/Wet,NPP,43.2778,-77.31,448,163.95,14,1109,416.42,1557,580.37
+FitzPatrick,New York,Dry/Wet,NPP,43.5233,-76.3983,2176,389.12,32,2428,448.87,4604,837.99
+Oyster Creek,New Jersey,Dry/Wet,NPP,39.8147,-74.205,4504,802.24,67,0,0,4504,802.24
+Hope Creek/Salem,New Jersey,Dry/Wet,NPP,39.4678,-75.5381,3752,1078.17,79,5325,1605.75,9077,2683.92
+Seabrook,New Hampshire,Dry/Wet,NPP,42.8989,-70.8508,960,439.52,30,727,332.55,1687,772.07
+Fort Calhoun,Nebraska,Dry/Wet,NPP,41.5203,-96.077222,1264,465.98,40,0,0,1264,465.98
+Cooper,Nebraska,Dry/Wet,NPP,40.3619,-95.6414,1830,329.17,30,1626,296.59,3456,625.76
+Callaway,Missouri,Dry/Wet,NPP,38.761667,-91.78,1110,465.82,30,1083,461.94,2193,927.76
+Grand Gulf,Mississippi,Dry/Wet,NPP,32.0072,-91.0478,2992,524.73,44,3260,591.65,6252,1116.38
+Prairie Island,Minnesota,Dry/Wet,NPP,44.6217,-92.6331,2000,735.16,50,1087,412.92,3087,1148.08
+Monticello,Minnesota,Dry/Wet,NPP,45.3336,-93.8492,1830,317.17,30,1052,183.98,2882,501.15
+Palisades,Michigan,Dry/Wet,NPP,42.3228,-86.3144,1355,552.69,49,698,297.79,2053,850.48
+Fermi,Michigan,Dry/Wet,NPP,41.9628,-83.2575,1564,273.96,23,2648,471.77,4212,745.73
+D.C. Cook,Michigan,Dry/Wet,NPP,41.975556,-86.565278,1824,794.26,57,2688,1181.03,4512,1975.29
+Pilgrim,Massachusetts,Dry/Wet,NPP,41.945,-70.5783,4116,734.82,62,0,0,4116,734.82
+Calvert Cliffs,Maryland,Dry/Wet,NPP,38.4319,-76.4422,2846,1105.76,100,1411,570.8,4257,1676.56
+Waterford,Louisiana,Dry/Wet,NPP,29.9953,-90.4711,992,415.14,31,1254,533.11,2246,948.25
+River Bend,Louisiana,Dry/Wet,NPP,30.756667,-91.333333,2516,446.74,37,2056,369.1,4572,815.84
+Wolf Creek,Kansas,Wet,NPP,38.2389,-95.6889,185,84.39,5,1827,838.63,2012,923.02
+Duane Arnold,Iowa,Dry/Wet,NPP,42.1006,-91.7772,3648,662.64,60,0,0,3648,662.64
+Zion,Illinois,Dry,NPP,42.4461,-87.8028,2226,1019.41,61,-,-,2226,1019.41
+Quad Cities,Illinois,Dry/Wet,NPP,41.7264,-90.31,4692,831.74,69,6267,1108.26,10959,1940.00
+La Salle,Illinois,Dry/Wet,NPP,41.2456,-88.6692,,,,,,,
+Dresden,Illinois,Dry/Wet,NPP,41.3894,-88.2533,5365,940.8,78,5519,972.86,11884,1913.66
+Clinton,Illinois,Wet,NPP,40.1722,-88.835,1602,291,18,2706,492.48,4308,783.48
+Byron,Illinois,Dry/Wet,NPP,42.0742,-89.2819,1536,647.44,48,2555,1072.78,4091,1720.22
+Braidwood,Illinois,Dry/Wet,NPP,41.2436,-88.2292,1312,552.14,41,2580,1083.41,3892,1635.55
+Vogtle,Georgia,Dry/Wet,NPP,33.1433,-81.7606,1696,741.98,53,2255,956.23,3951,1698.21
+Hatch,Georgia,Dry/Wet,NPP,31.9342,-82.3439,6392,1147.39,94,3863,702.64,10255,1850.03
+Turkey Point,Florida,Dry/Wet,NPP,25.4342,-80.3306,1216,553.88,38,2220,1008.19,3436,1562.07
+Saint Lucie,Florida,Dry/Wet,NPP,27.3486,-80.2464,1920,753.02,60,2434,944.89,4354,1697.91
+Crystal River,Florida,Wet,NPP,28.9575,-82.5633,1243,582.24,39,0,0,1243,582.24
+Millstone,Connecticut,Dry/Wet,NPP,41.3119,-72.1686,1568,643.58,49,2071,902.01,3639,1545.59
+San Onofre,California,Wet,NPP,33.3689,-117.555,3855,1609.36,123,0,0,3855,1609.36
+Diablo Canyon,California,Dry/Wet,NPP,35.2108,-120.8561,1856,809.13,58,2005,847.92,3861,1657.05
+Arkansas Nuclear,Arkansas,Dry/Wet,NPP,35.3103,-93.2314,2752,1209.59,102,1336,609.57,4088,1819.16
+Palo Verde,Arizona,Dry/Wet,NPP,33.4025,-112.8556,4314,1847.27,170,2511,1092.68,6825,2939.95
+Farley,Alabama,Dry/Wet,NPP,31.2231,-85.1133,1824,811.82,57,1984,851.52,3808,1663.34
+Browns Ferry,Alabama,Dry/Wet,NPP,34.7039,-87.1186,8667,1552.05,108,6483,1180.31,15150,2732.36
+Lacrosse,Wisconsin,Dry,ISFSI,43.56,-91.2314,333,37.97,5,,,333,37.97
+Trojan,Oregon,Dry,ISFSI,46.0383,-122.885,790,359.26,34,,,790,359.26
+Big Rock Point,Michigan,Dry,ISFSI,45.3589,-85.1972441,441,57.91,7,,,441,57.91
+Yankee Row,Massachusetts,Dry,ISFSI,42.7292,-72.9253,533,127.13,15,,,533,127.13
+Maine Yankee,Maine,Dry,ISFSI,43.9506,-69.6958,1434,542.26,60,,,1434,542.26
+Morris,Illinois,Wet,ISFSI,41.3897,-88.2681,,,,,,,
+Haddam Neck,Connecticut,Dry,ISFSI,41.4822,-72.4983,1019,413.66,40,,,1019,413.66
+Fort St. Vrain,Colorado,Dry,ISFSI,40.2456,-104.8775,,,,,,,
+Rancho Seco,California,Dry,ISFSI,38.3453,-121.1217,493,228.38,21,,,493,228.38
+Humboldt Bay,California,Dry,ISFSI,40.7411,-124.2089,390,28.94,5,,,390,28.94
+Hanford Site,Washington,Dry/Wet,Government Facility/Multiple,46.6475,-119.5986,,,,,,,
+Oak Ridge Reservation,Tennessee,Wet,Government Facility/Multiple,35.93,-84.31,,,,,,,
+Sandia National Lab,New Mexico,Dry,Government Facility/Multiple,35.06,-105.5358,,,,,,,
+Idaho National Lab,Idaho,Dry/Wet,Government Facility/Multiple,43.52,-112.5986,,,,,,,
