@@ -16,7 +16,7 @@ for _, row in map_data.iterrows():
     CircleMarker(
         location=[row["Latitude"], row["Longitude"]],
         radius=max(3, row["Site_Assy"] / 500),  # Scale size by assemblies
-        color="lightgreen",
+        color='#d3e424',
         fill=True,
         fill_opacity=0.6,
         popup=folium.Popup(

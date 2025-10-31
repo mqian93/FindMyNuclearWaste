@@ -1,0 +1,1757 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c4c8ba550ff5e588f3d948d3a1b504ea {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c4c8ba550ff5e588f3d948d3a1b504ea" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c4c8ba550ff5e588f3d948d3a1b504ea = L.map(
+                "map_c4c8ba550ff5e588f3d948d3a1b504ea",
+                {
+                    center: [39.5, -98.35],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7e85d5404bae710f6a71cddd7d309d0d = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_7e85d5404bae710f6a71cddd7d309d0d.addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+            var circle_marker_cfa4b35c3fb5626827719eb64bc3770e = L.circleMarker(
+                [44.2811, -87.5367],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.656, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_9116abf1c38c8ab4fda35956fed187b2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_54b8b10ca15af3d02f756cbfaea3cf3a = $(`<div id="html_54b8b10ca15af3d02f756cbfaea3cf3a" style="width: 100.0%; height: 100.0%;"><b>Point Beach</b><br>State: Wisconsin<br>Assemblies: 2828</div>`)[0];
+                popup_9116abf1c38c8ab4fda35956fed187b2.setContent(html_54b8b10ca15af3d02f756cbfaea3cf3a);
+            
+        
+
+        circle_marker_cfa4b35c3fb5626827719eb64bc3770e.bindPopup(popup_9116abf1c38c8ab4fda35956fed187b2)
+        ;
+
+        
+    
+    
+            var circle_marker_9eae863c95375b91304defb8d62b3d16 = L.circleMarker(
+                [44.3422, -87.5361],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_261afd3fcecc06a67c670108a798a809 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e3ae633bf529535e84d634371cf72d5 = $(`<div id="html_8e3ae633bf529535e84d634371cf72d5" style="width: 100.0%; height: 100.0%;"><b>Kewaunee</b><br>State: Wisconsin<br>Assemblies: 1335</div>`)[0];
+                popup_261afd3fcecc06a67c670108a798a809.setContent(html_8e3ae633bf529535e84d634371cf72d5);
+            
+        
+
+        circle_marker_9eae863c95375b91304defb8d62b3d16.bindPopup(popup_261afd3fcecc06a67c670108a798a809)
+        ;
+
+        
+    
+    
+            var circle_marker_afaaec6ce1f569a7ceb158112ccbbdec = L.circleMarker(
+                [46.4711, -119.3339],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.728, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_fca0c7690089a9048a3b57602ddc3f92 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1f5aa2f10781dbf5ba857124a0566213 = $(`<div id="html_1f5aa2f10781dbf5ba857124a0566213" style="width: 100.0%; height: 100.0%;"><b>Columbia Generating Station</b><br>State: Washington<br>Assemblies: 4864</div>`)[0];
+                popup_fca0c7690089a9048a3b57602ddc3f92.setContent(html_1f5aa2f10781dbf5ba857124a0566213);
+            
+        
+
+        circle_marker_afaaec6ce1f569a7ceb158112ccbbdec.bindPopup(popup_fca0c7690089a9048a3b57602ddc3f92)
+        ;
+
+        
+    
+    
+            var circle_marker_4e68f6b80e3885867dbc4958e6c936ea = L.circleMarker(
+                [37.1656, -76.6978],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.308, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_191dfc72ffce82a9449293bbb00ca852 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_afd61b301cbcce10489c9c625ddf49c8 = $(`<div id="html_afd61b301cbcce10489c9c625ddf49c8" style="width: 100.0%; height: 100.0%;"><b>Surry</b><br>State: Virginia<br>Assemblies: 3654</div>`)[0];
+                popup_191dfc72ffce82a9449293bbb00ca852.setContent(html_afd61b301cbcce10489c9c625ddf49c8);
+            
+        
+
+        circle_marker_4e68f6b80e3885867dbc4958e6c936ea.bindPopup(popup_191dfc72ffce82a9449293bbb00ca852)
+        ;
+
+        
+    
+    
+            var circle_marker_f185f8b8a22bb8c993bc10eafa409425 = L.circleMarker(
+                [38.0606, -77.7894],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.258, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_3965d30d11331f3632c9fee21ae7fc66 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b79824fbcbfcde1f49d248264d78c58 = $(`<div id="html_4b79824fbcbfcde1f49d248264d78c58" style="width: 100.0%; height: 100.0%;"><b>North Anna</b><br>State: Virginia<br>Assemblies: 3629</div>`)[0];
+                popup_3965d30d11331f3632c9fee21ae7fc66.setContent(html_4b79824fbcbfcde1f49d248264d78c58);
+            
+        
+
+        circle_marker_f185f8b8a22bb8c993bc10eafa409425.bindPopup(popup_3965d30d11331f3632c9fee21ae7fc66)
+        ;
+
+        
+    
+    
+            var circle_marker_7a8da0f951f2cd5bb58494e33f9ceba0 = L.circleMarker(
+                [42.7789, -72.5131],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.76, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_5dbabf81ea31c4649c19c8c4b1d43ece = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53e95347762f169e82dce1ce2746c80d = $(`<div id="html_53e95347762f169e82dce1ce2746c80d" style="width: 100.0%; height: 100.0%;"><b>Vermont Yankee</b><br>State: Vermont<br>Assemblies: 3880</div>`)[0];
+                popup_5dbabf81ea31c4649c19c8c4b1d43ece.setContent(html_53e95347762f169e82dce1ce2746c80d);
+            
+        
+
+        circle_marker_7a8da0f951f2cd5bb58494e33f9ceba0.bindPopup(popup_5dbabf81ea31c4649c19c8c4b1d43ece)
+        ;
+
+        
+    
+    
+            var circle_marker_291b81e583304db4c44c2001e6fb612e = L.circleMarker(
+                [28.7956, -96.0489],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.474, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_cc0c3c5e8b2b93b0b94cdac3fd15f5db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30d93074ab01d1b72b38e99e5fc16095 = $(`<div id="html_30d93074ab01d1b72b38e99e5fc16095" style="width: 100.0%; height: 100.0%;"><b>South Texas</b><br>State: Texas<br>Assemblies: 3237</div>`)[0];
+                popup_cc0c3c5e8b2b93b0b94cdac3fd15f5db.setContent(html_30d93074ab01d1b72b38e99e5fc16095);
+            
+        
+
+        circle_marker_291b81e583304db4c44c2001e6fb612e.bindPopup(popup_cc0c3c5e8b2b93b0b94cdac3fd15f5db)
+        ;
+
+        
+    
+    
+            var circle_marker_5500419a102a09535010bfe8bd7f5b8f = L.circleMarker(
+                [32.2983, -97.785],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.258, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_3eaec3e3e57614b3a7e59ae5362ce81f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_76244ac0b91bae1e2c942bdf1c5ea278 = $(`<div id="html_76244ac0b91bae1e2c942bdf1c5ea278" style="width: 100.0%; height: 100.0%;"><b>Comanche Peak</b><br>State: Texas<br>Assemblies: 3629</div>`)[0];
+                popup_3eaec3e3e57614b3a7e59ae5362ce81f.setContent(html_76244ac0b91bae1e2c942bdf1c5ea278);
+            
+        
+
+        circle_marker_5500419a102a09535010bfe8bd7f5b8f.bindPopup(popup_3eaec3e3e57614b3a7e59ae5362ce81f)
+        ;
+
+        
+    
+    
+            var circle_marker_123bcbfbb6c0113071b5d47a4d339ad6 = L.circleMarker(
+                [35.6028, -84.7894],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.504, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_c601f6a13543274395fefe466b4d8a8d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_771219ce079d2a9f3376e18c174cfc8c = $(`<div id="html_771219ce079d2a9f3376e18c174cfc8c" style="width: 100.0%; height: 100.0%;"><b>Watts Bar</b><br>State: Tennessee<br>Assemblies: 1752</div>`)[0];
+                popup_c601f6a13543274395fefe466b4d8a8d.setContent(html_771219ce079d2a9f3376e18c174cfc8c);
+            
+        
+
+        circle_marker_123bcbfbb6c0113071b5d47a4d339ad6.bindPopup(popup_c601f6a13543274395fefe466b4d8a8d)
+        ;
+
+        
+    
+    
+            var circle_marker_fadea0159c115c958f45daeed7ea225a = L.circleMarker(
+                [35.2264, -85.0917],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.836, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_b276824044fa295d1c109665eb16a0d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4f09256d746cd164b3fb7946a94eed4b = $(`<div id="html_4f09256d746cd164b3fb7946a94eed4b" style="width: 100.0%; height: 100.0%;"><b>Sequoyah</b><br>State: Tennessee<br>Assemblies: 3918</div>`)[0];
+                popup_b276824044fa295d1c109665eb16a0d4.setContent(html_4f09256d746cd164b3fb7946a94eed4b);
+            
+        
+
+        circle_marker_fadea0159c115c958f45daeed7ea225a.bindPopup(popup_b276824044fa295d1c109665eb16a0d4)
+        ;
+
+        
+    
+    
+            var circle_marker_ef5415dd7c249b1c7dce17f1a0ff692e = L.circleMarker(
+                [34.2986, -81.3147],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_d5572f30210e5bb8226e3cd375357903 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc3d3d41c32b4e30168653c16177bea2 = $(`<div id="html_cc3d3d41c32b4e30168653c16177bea2" style="width: 100.0%; height: 100.0%;"><b>Summer</b><br>State: South Carolina<br>Assemblies: 1700</div>`)[0];
+                popup_d5572f30210e5bb8226e3cd375357903.setContent(html_cc3d3d41c32b4e30168653c16177bea2);
+            
+        
+
+        circle_marker_ef5415dd7c249b1c7dce17f1a0ff692e.bindPopup(popup_d5572f30210e5bb8226e3cd375357903)
+        ;
+
+        
+    
+    
+            var circle_marker_1529e75cfa263ebc281450c1f98c0cbb = L.circleMarker(
+                [34.4028, -80.1583],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_f1532284b3cbb46ca2b644e1a86e0b24 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ae358c40fe90c3bd42dcaf7971f35d1 = $(`<div id="html_0ae358c40fe90c3bd42dcaf7971f35d1" style="width: 100.0%; height: 100.0%;"><b>Robinson</b><br>State: South Carolina<br>Assemblies: 1102</div>`)[0];
+                popup_f1532284b3cbb46ca2b644e1a86e0b24.setContent(html_0ae358c40fe90c3bd42dcaf7971f35d1);
+            
+        
+
+        circle_marker_1529e75cfa263ebc281450c1f98c0cbb.bindPopup(popup_f1532284b3cbb46ca2b644e1a86e0b24)
+        ;
+
+        
+    
+    
+            var circle_marker_89d02783455b6c1948902299154cba29 = L.circleMarker(
+                [34.7939, -82.8981],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.07, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_4b9af1bd4efd24c23bb6b675f81baaf4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a866f053a6da44416243740a2bfd347 = $(`<div id="html_0a866f053a6da44416243740a2bfd347" style="width: 100.0%; height: 100.0%;"><b>Oconee</b><br>State: South Carolina<br>Assemblies: 5535</div>`)[0];
+                popup_4b9af1bd4efd24c23bb6b675f81baaf4.setContent(html_0a866f053a6da44416243740a2bfd347);
+            
+        
+
+        circle_marker_89d02783455b6c1948902299154cba29.bindPopup(popup_4b9af1bd4efd24c23bb6b675f81baaf4)
+        ;
+
+        
+    
+    
+            var circle_marker_af0cf3a633bbde53641b28cf99dd76ee = L.circleMarker(
+                [35.0517, -81.07],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.524, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_58fb7c0541ff29a68b6aa73c8e2c0208 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7db05ac7c7e71c501e22128337232f3c = $(`<div id="html_7db05ac7c7e71c501e22128337232f3c" style="width: 100.0%; height: 100.0%;"><b>Catawba</b><br>State: South Carolina<br>Assemblies: 3762</div>`)[0];
+                popup_58fb7c0541ff29a68b6aa73c8e2c0208.setContent(html_7db05ac7c7e71c501e22128337232f3c);
+            
+        
+
+        circle_marker_af0cf3a633bbde53641b28cf99dd76ee.bindPopup(popup_58fb7c0541ff29a68b6aa73c8e2c0208)
+        ;
+
+        
+    
+    
+            var circle_marker_785f941b8ac1882d702c6ccfeeb62113 = L.circleMarker(
+                [40.1539, -76.7247],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.326, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_f676d4e1310798de7bba907661bf44e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1283fc5790f14b65e1435e58d9cbb37d = $(`<div id="html_1283fc5790f14b65e1435e58d9cbb37d" style="width: 100.0%; height: 100.0%;"><b>Three Mile Island</b><br>State: Pennsylvania<br>Assemblies: 1663</div>`)[0];
+                popup_f676d4e1310798de7bba907661bf44e2.setContent(html_1283fc5790f14b65e1435e58d9cbb37d);
+            
+        
+
+        circle_marker_785f941b8ac1882d702c6ccfeeb62113.bindPopup(popup_f676d4e1310798de7bba907661bf44e2)
+        ;
+
+        
+    
+    
+            var circle_marker_cffc97caa64bc2b292493d702490fd90 = L.circleMarker(
+                [41.0889, -76.1489],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.962, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_578ab4339d8c7e4092400b5be0d576f7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_42c36a770e35ad44b54df77837e2c58e = $(`<div id="html_42c36a770e35ad44b54df77837e2c58e" style="width: 100.0%; height: 100.0%;"><b>Susqehanna</b><br>State: Pennsylvania<br>Assemblies: 11481</div>`)[0];
+                popup_578ab4339d8c7e4092400b5be0d576f7.setContent(html_42c36a770e35ad44b54df77837e2c58e);
+            
+        
+
+        circle_marker_cffc97caa64bc2b292493d702490fd90.bindPopup(popup_578ab4339d8c7e4092400b5be0d576f7)
+        ;
+
+        
+    
+    
+            var circle_marker_2a4f4658d9c3b405e1a642f2b4fcfee1 = L.circleMarker(
+                [39.7583, -76.2681],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25.604, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_2d2aa1ed8f917195c3fe384738f1bc9c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4913dc6a89b66ae743994cdcd1efec6 = $(`<div id="html_e4913dc6a89b66ae743994cdcd1efec6" style="width: 100.0%; height: 100.0%;"><b>Peach Bottom</b><br>State: Pennsylvania<br>Assemblies: 12802</div>`)[0];
+                popup_2d2aa1ed8f917195c3fe384738f1bc9c.setContent(html_e4913dc6a89b66ae743994cdcd1efec6);
+            
+        
+
+        circle_marker_2a4f4658d9c3b405e1a642f2b4fcfee1.bindPopup(popup_2d2aa1ed8f917195c3fe384738f1bc9c)
+        ;
+
+        
+    
+    
+            var circle_marker_0a78904fb94871478a7c7129552ec11d = L.circleMarker(
+                [40.2267, -75.5872],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.11, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_c4be19cb5266b2e5e74d0e9afc86cab7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_622eb24a1e43cf2d90b60951de99368b = $(`<div id="html_622eb24a1e43cf2d90b60951de99368b" style="width: 100.0%; height: 100.0%;"><b>Limerick</b><br>State: Pennsylvania<br>Assemblies: 10055</div>`)[0];
+                popup_c4be19cb5266b2e5e74d0e9afc86cab7.setContent(html_622eb24a1e43cf2d90b60951de99368b);
+            
+        
+
+        circle_marker_0a78904fb94871478a7c7129552ec11d.bindPopup(popup_c4be19cb5266b2e5e74d0e9afc86cab7)
+        ;
+
+        
+    
+    
+            var circle_marker_a21fd6154b7b9f6c736cfe3a91cecc30 = L.circleMarker(
+                [40.6233, -80.4306],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.228, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_05798a0a94d74ed55f2c2f18b6d2d787 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d76129802f126f082df66b89fe63944 = $(`<div id="html_9d76129802f126f082df66b89fe63944" style="width: 100.0%; height: 100.0%;"><b>Beaver Valley</b><br>State: Pennsylvania<br>Assemblies: 3114</div>`)[0];
+                popup_05798a0a94d74ed55f2c2f18b6d2d787.setContent(html_9d76129802f126f082df66b89fe63944);
+            
+        
+
+        circle_marker_a21fd6154b7b9f6c736cfe3a91cecc30.bindPopup(popup_05798a0a94d74ed55f2c2f18b6d2d787)
+        ;
+
+        
+    
+    
+            var circle_marker_8a22e06c09d4f751296ec31fd90b599a = L.circleMarker(
+                [41.8008, -81.1433],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.864, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_d46fc209b4895b2a954d5eec76759851 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6fe3c035560ac7887b75e0aaa2513cef = $(`<div id="html_6fe3c035560ac7887b75e0aaa2513cef" style="width: 100.0%; height: 100.0%;"><b>Perry</b><br>State: Ohio<br>Assemblies: 4932</div>`)[0];
+                popup_d46fc209b4895b2a954d5eec76759851.setContent(html_6fe3c035560ac7887b75e0aaa2513cef);
+            
+        
+
+        circle_marker_8a22e06c09d4f751296ec31fd90b599a.bindPopup(popup_d46fc209b4895b2a954d5eec76759851)
+        ;
+
+        
+    
+    
+            var circle_marker_036bbedccc70752cd9a9db3436027cae = L.circleMarker(
+                [41.5967, -83.0864],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.02, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_c105d656de05627d4c16f4d00d930b06 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00ae279f4bc6cf0028bb8f9acfc84536 = $(`<div id="html_00ae279f4bc6cf0028bb8f9acfc84536" style="width: 100.0%; height: 100.0%;"><b>Davis-Besse</b><br>State: Ohio<br>Assemblies: 1510</div>`)[0];
+                popup_c105d656de05627d4c16f4d00d930b06.setContent(html_00ae279f4bc6cf0028bb8f9acfc84536);
+            
+        
+
+        circle_marker_036bbedccc70752cd9a9db3436027cae.bindPopup(popup_c105d656de05627d4c16f4d00d930b06)
+        ;
+
+        
+    
+    
+            var circle_marker_4353142199a63afb7afc74c0ed53349e = L.circleMarker(
+                [35.6333, -78.955],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.834, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_3b02c797cb5ed1493b5f665a1a747ed3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef03613f0388674cba5bcc96884f9b42 = $(`<div id="html_ef03613f0388674cba5bcc96884f9b42" style="width: 100.0%; height: 100.0%;"><b>Shearon Harris</b><br>State: North Carolina<br>Assemblies: 6417</div>`)[0];
+                popup_3b02c797cb5ed1493b5f665a1a747ed3.setContent(html_ef03613f0388674cba5bcc96884f9b42);
+            
+        
+
+        circle_marker_4353142199a63afb7afc74c0ed53349e.bindPopup(popup_3b02c797cb5ed1493b5f665a1a747ed3)
+        ;
+
+        
+    
+    
+            var circle_marker_eb3e99e5d078ac961d6aaa07c063b168 = L.circleMarker(
+                [35.4325, -80.9483],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.578, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_7b0ed73dc455dfb1e26a65b19c1bc5ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ce72c5f7d299af7ee25582657a0ba37 = $(`<div id="html_8ce72c5f7d299af7ee25582657a0ba37" style="width: 100.0%; height: 100.0%;"><b>McGuire</b><br>State: North Carolina<br>Assemblies: 4289</div>`)[0];
+                popup_7b0ed73dc455dfb1e26a65b19c1bc5ea.setContent(html_8ce72c5f7d299af7ee25582657a0ba37);
+            
+        
+
+        circle_marker_eb3e99e5d078ac961d6aaa07c063b168.bindPopup(popup_7b0ed73dc455dfb1e26a65b19c1bc5ea)
+        ;
+
+        
+    
+    
+            var circle_marker_83f506c7a06b4d1c638f8b9b23cd5e63 = L.circleMarker(
+                [33.9583, -78.0103],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.636, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_4ac1df6f9eb0747f0af57d21154a7c8f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_24427f1d7e1cd691c48f2bb6eab6dc9f = $(`<div id="html_24427f1d7e1cd691c48f2bb6eab6dc9f" style="width: 100.0%; height: 100.0%;"><b>Brunswick</b><br>State: North Carolina<br>Assemblies: 5318</div>`)[0];
+                popup_4ac1df6f9eb0747f0af57d21154a7c8f.setContent(html_24427f1d7e1cd691c48f2bb6eab6dc9f);
+            
+        
+
+        circle_marker_83f506c7a06b4d1c638f8b9b23cd5e63.bindPopup(popup_4ac1df6f9eb0747f0af57d21154a7c8f)
+        ;
+
+        
+    
+    
+            var circle_marker_d085953377fc1b5649c827df020db36c = L.circleMarker(
+                [43.5208, -76.4069],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.072, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_8a83ddbf0277e52fd7c00ce0a04da4b2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc123fe1f884ab0d6193623e98dd3a3a = $(`<div id="html_bc123fe1f884ab0d6193623e98dd3a3a" style="width: 100.0%; height: 100.0%;"><b>Nine Mile Point</b><br>State: New York<br>Assemblies: 9036</div>`)[0];
+                popup_8a83ddbf0277e52fd7c00ce0a04da4b2.setContent(html_bc123fe1f884ab0d6193623e98dd3a3a);
+            
+        
+
+        circle_marker_d085953377fc1b5649c827df020db36c.bindPopup(popup_8a83ddbf0277e52fd7c00ce0a04da4b2)
+        ;
+
+        
+    
+    
+            var circle_marker_9265553ebf1d76b768d340c4f7faa20c = L.circleMarker(
+                [41.2697, -73.9522],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.002, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_8cbbea579f85dfcd2cd41b75759c437f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da699b32ff0b6f631f248b7bef25dc0c = $(`<div id="html_da699b32ff0b6f631f248b7bef25dc0c" style="width: 100.0%; height: 100.0%;"><b>Indian Point</b><br>State: New York<br>Assemblies: 4001</div>`)[0];
+                popup_8cbbea579f85dfcd2cd41b75759c437f.setContent(html_da699b32ff0b6f631f248b7bef25dc0c);
+            
+        
+
+        circle_marker_9265553ebf1d76b768d340c4f7faa20c.bindPopup(popup_8cbbea579f85dfcd2cd41b75759c437f)
+        ;
+
+        
+    
+    
+            var circle_marker_a0eb1b79ee66dbd8a2712295055b525e = L.circleMarker(
+                [43.2778, -77.31],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.114, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_e587509fa9efc69de058935ed9885de7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8783264d23d1444f4079e7544763566 = $(`<div id="html_e8783264d23d1444f4079e7544763566" style="width: 100.0%; height: 100.0%;"><b>Ginna</b><br>State: New York<br>Assemblies: 1557</div>`)[0];
+                popup_e587509fa9efc69de058935ed9885de7.setContent(html_e8783264d23d1444f4079e7544763566);
+            
+        
+
+        circle_marker_a0eb1b79ee66dbd8a2712295055b525e.bindPopup(popup_e587509fa9efc69de058935ed9885de7)
+        ;
+
+        
+    
+    
+            var circle_marker_c8dbda9306443daff88f6680e00dec9c = L.circleMarker(
+                [43.5233, -76.3983],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.208, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_61e1df6e8cfae97b474a41727fc6340b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef823728a24e6adc8c1887ce25e46d09 = $(`<div id="html_ef823728a24e6adc8c1887ce25e46d09" style="width: 100.0%; height: 100.0%;"><b>FitzPatrick</b><br>State: New York<br>Assemblies: 4604</div>`)[0];
+                popup_61e1df6e8cfae97b474a41727fc6340b.setContent(html_ef823728a24e6adc8c1887ce25e46d09);
+            
+        
+
+        circle_marker_c8dbda9306443daff88f6680e00dec9c.bindPopup(popup_61e1df6e8cfae97b474a41727fc6340b)
+        ;
+
+        
+    
+    
+            var circle_marker_df7eb5dcc185ff576bea2415923c4053 = L.circleMarker(
+                [39.8147, -74.205],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.008, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_64ff9cc50c8445c38208205d8440262b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8bc5ac0f52c876288b526978fff227b0 = $(`<div id="html_8bc5ac0f52c876288b526978fff227b0" style="width: 100.0%; height: 100.0%;"><b>Oyster Creek</b><br>State: New Jersey<br>Assemblies: 4504</div>`)[0];
+                popup_64ff9cc50c8445c38208205d8440262b.setContent(html_8bc5ac0f52c876288b526978fff227b0);
+            
+        
+
+        circle_marker_df7eb5dcc185ff576bea2415923c4053.bindPopup(popup_64ff9cc50c8445c38208205d8440262b)
+        ;
+
+        
+    
+    
+            var circle_marker_2e407459fdf9b525eca2d71d4f5ff5c6 = L.circleMarker(
+                [39.4678, -75.5381],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.154, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_23496254493d55a77009d752a1312f05 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_287fe011ac604160ebbed06bffb0257a = $(`<div id="html_287fe011ac604160ebbed06bffb0257a" style="width: 100.0%; height: 100.0%;"><b>Hope Creek/Salem</b><br>State: New Jersey<br>Assemblies: 9077</div>`)[0];
+                popup_23496254493d55a77009d752a1312f05.setContent(html_287fe011ac604160ebbed06bffb0257a);
+            
+        
+
+        circle_marker_2e407459fdf9b525eca2d71d4f5ff5c6.bindPopup(popup_23496254493d55a77009d752a1312f05)
+        ;
+
+        
+    
+    
+            var circle_marker_217817c59c4b16cd4b9e2519c981df22 = L.circleMarker(
+                [42.8989, -70.8508],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.374, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_190c55ebe66e97e35975c8961d15fece = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_29a8ca56c4598976646b74e9fc4f73c0 = $(`<div id="html_29a8ca56c4598976646b74e9fc4f73c0" style="width: 100.0%; height: 100.0%;"><b>Seabrook</b><br>State: New Hampshire<br>Assemblies: 1687</div>`)[0];
+                popup_190c55ebe66e97e35975c8961d15fece.setContent(html_29a8ca56c4598976646b74e9fc4f73c0);
+            
+        
+
+        circle_marker_217817c59c4b16cd4b9e2519c981df22.bindPopup(popup_190c55ebe66e97e35975c8961d15fece)
+        ;
+
+        
+    
+    
+            var circle_marker_b286eb5cdd87918c1431334f633355e3 = L.circleMarker(
+                [41.5203, -96.077222],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_56b649afadc3f51faccb808bf88052b4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_334bc31b5ff0536634281b3122c29c7c = $(`<div id="html_334bc31b5ff0536634281b3122c29c7c" style="width: 100.0%; height: 100.0%;"><b>Fort Calhoun</b><br>State: Nebraska<br>Assemblies: 1264</div>`)[0];
+                popup_56b649afadc3f51faccb808bf88052b4.setContent(html_334bc31b5ff0536634281b3122c29c7c);
+            
+        
+
+        circle_marker_b286eb5cdd87918c1431334f633355e3.bindPopup(popup_56b649afadc3f51faccb808bf88052b4)
+        ;
+
+        
+    
+    
+            var circle_marker_03085022db716392f4b4620203f57af7 = L.circleMarker(
+                [40.3619, -95.6414],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.912, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_f0ad602dd470ec6e060d48edc7038248 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8891fd90121e85eb6358b3819020271f = $(`<div id="html_8891fd90121e85eb6358b3819020271f" style="width: 100.0%; height: 100.0%;"><b>Cooper</b><br>State: Nebraska<br>Assemblies: 3456</div>`)[0];
+                popup_f0ad602dd470ec6e060d48edc7038248.setContent(html_8891fd90121e85eb6358b3819020271f);
+            
+        
+
+        circle_marker_03085022db716392f4b4620203f57af7.bindPopup(popup_f0ad602dd470ec6e060d48edc7038248)
+        ;
+
+        
+    
+    
+            var circle_marker_9050951582d7a9b0ac4ac2de1f812503 = L.circleMarker(
+                [38.761667, -91.78],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.386, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_544f91bbb2f1a6fe0be5804efce33a13 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ae819d0cb9bf99095feaa8afcee54b0c = $(`<div id="html_ae819d0cb9bf99095feaa8afcee54b0c" style="width: 100.0%; height: 100.0%;"><b>Callaway</b><br>State: Missouri<br>Assemblies: 2193</div>`)[0];
+                popup_544f91bbb2f1a6fe0be5804efce33a13.setContent(html_ae819d0cb9bf99095feaa8afcee54b0c);
+            
+        
+
+        circle_marker_9050951582d7a9b0ac4ac2de1f812503.bindPopup(popup_544f91bbb2f1a6fe0be5804efce33a13)
+        ;
+
+        
+    
+    
+            var circle_marker_f74e3a501e6ce43e72487b1ff7fb9b18 = L.circleMarker(
+                [32.0072, -91.0478],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.504, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_0304f06ac99cf3fff57d884b84601eba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b478c24859a84c7bedb170dac87f1097 = $(`<div id="html_b478c24859a84c7bedb170dac87f1097" style="width: 100.0%; height: 100.0%;"><b>Grand Gulf</b><br>State: Mississippi<br>Assemblies: 6252</div>`)[0];
+                popup_0304f06ac99cf3fff57d884b84601eba.setContent(html_b478c24859a84c7bedb170dac87f1097);
+            
+        
+
+        circle_marker_f74e3a501e6ce43e72487b1ff7fb9b18.bindPopup(popup_0304f06ac99cf3fff57d884b84601eba)
+        ;
+
+        
+    
+    
+            var circle_marker_4783a156a5e869bbfb65f878eb9de491 = L.circleMarker(
+                [44.6217, -92.6331],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.174, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_58a3f8310e9ea62655a578ac7583db70 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_449446e15ad3ca588acb9f28216a05d1 = $(`<div id="html_449446e15ad3ca588acb9f28216a05d1" style="width: 100.0%; height: 100.0%;"><b>Prairie Island</b><br>State: Minnesota<br>Assemblies: 3087</div>`)[0];
+                popup_58a3f8310e9ea62655a578ac7583db70.setContent(html_449446e15ad3ca588acb9f28216a05d1);
+            
+        
+
+        circle_marker_4783a156a5e869bbfb65f878eb9de491.bindPopup(popup_58a3f8310e9ea62655a578ac7583db70)
+        ;
+
+        
+    
+    
+            var circle_marker_9fad00eeb1ee0e8beeff0e22d9dace58 = L.circleMarker(
+                [45.3336, -93.8492],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.764, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_67c2649d4f33593b9a3c785663e36a50 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_66c93a588d23aa93acc19a8407b82185 = $(`<div id="html_66c93a588d23aa93acc19a8407b82185" style="width: 100.0%; height: 100.0%;"><b>Monticello</b><br>State: Minnesota<br>Assemblies: 2882</div>`)[0];
+                popup_67c2649d4f33593b9a3c785663e36a50.setContent(html_66c93a588d23aa93acc19a8407b82185);
+            
+        
+
+        circle_marker_9fad00eeb1ee0e8beeff0e22d9dace58.bindPopup(popup_67c2649d4f33593b9a3c785663e36a50)
+        ;
+
+        
+    
+    
+            var circle_marker_e0cb2386587d664ea86e4c164b966e53 = L.circleMarker(
+                [42.3228, -86.3144],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.106, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_73082944e7bb882789c499d5c85f24c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_056132e2e04b444436aa2c540e7da3cc = $(`<div id="html_056132e2e04b444436aa2c540e7da3cc" style="width: 100.0%; height: 100.0%;"><b>Palisades</b><br>State: Michigan<br>Assemblies: 2053</div>`)[0];
+                popup_73082944e7bb882789c499d5c85f24c1.setContent(html_056132e2e04b444436aa2c540e7da3cc);
+            
+        
+
+        circle_marker_e0cb2386587d664ea86e4c164b966e53.bindPopup(popup_73082944e7bb882789c499d5c85f24c1)
+        ;
+
+        
+    
+    
+            var circle_marker_208ba54ef2441493d13b9481d49533fd = L.circleMarker(
+                [41.9628, -83.2575],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.424, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_c0a0d0e32f5c6c5a207336f371345ac4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_228e5406ea3380968e05d544ac4c314e = $(`<div id="html_228e5406ea3380968e05d544ac4c314e" style="width: 100.0%; height: 100.0%;"><b>Fermi</b><br>State: Michigan<br>Assemblies: 4212</div>`)[0];
+                popup_c0a0d0e32f5c6c5a207336f371345ac4.setContent(html_228e5406ea3380968e05d544ac4c314e);
+            
+        
+
+        circle_marker_208ba54ef2441493d13b9481d49533fd.bindPopup(popup_c0a0d0e32f5c6c5a207336f371345ac4)
+        ;
+
+        
+    
+    
+            var circle_marker_54cc62249099cf56d3b2d5f335aca07c = L.circleMarker(
+                [41.975556, -86.565278],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.024, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_1a50d10e0e20974a88c63959880ba2db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a0df0f739d79edc170d0c19c57fba3f = $(`<div id="html_0a0df0f739d79edc170d0c19c57fba3f" style="width: 100.0%; height: 100.0%;"><b>D.C. Cook</b><br>State: Michigan<br>Assemblies: 4512</div>`)[0];
+                popup_1a50d10e0e20974a88c63959880ba2db.setContent(html_0a0df0f739d79edc170d0c19c57fba3f);
+            
+        
+
+        circle_marker_54cc62249099cf56d3b2d5f335aca07c.bindPopup(popup_1a50d10e0e20974a88c63959880ba2db)
+        ;
+
+        
+    
+    
+            var circle_marker_577852774ede87bd1423b5ed6a201bc6 = L.circleMarker(
+                [41.945, -70.5783],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.232, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_0febd68238db01273f13d8b1b70d91a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_16f6d77edd21252ce7e37e947f1fd803 = $(`<div id="html_16f6d77edd21252ce7e37e947f1fd803" style="width: 100.0%; height: 100.0%;"><b>Pilgrim</b><br>State: Massachusetts<br>Assemblies: 4116</div>`)[0];
+                popup_0febd68238db01273f13d8b1b70d91a0.setContent(html_16f6d77edd21252ce7e37e947f1fd803);
+            
+        
+
+        circle_marker_577852774ede87bd1423b5ed6a201bc6.bindPopup(popup_0febd68238db01273f13d8b1b70d91a0)
+        ;
+
+        
+    
+    
+            var circle_marker_0b75fcdc4e1b0f40340760612dd5ba14 = L.circleMarker(
+                [38.4319, -76.4422],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.514, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_69242f8509133863f41bc43918f4d1d5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_533d079ade528e0f9ac0b91abc459850 = $(`<div id="html_533d079ade528e0f9ac0b91abc459850" style="width: 100.0%; height: 100.0%;"><b>Calvert Cliffs</b><br>State: Maryland<br>Assemblies: 4257</div>`)[0];
+                popup_69242f8509133863f41bc43918f4d1d5.setContent(html_533d079ade528e0f9ac0b91abc459850);
+            
+        
+
+        circle_marker_0b75fcdc4e1b0f40340760612dd5ba14.bindPopup(popup_69242f8509133863f41bc43918f4d1d5)
+        ;
+
+        
+    
+    
+            var circle_marker_7a1e2970d983e02b7c1323136a37e276 = L.circleMarker(
+                [29.9953, -90.4711],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.492, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_5447d2d15a2202c1e8b44d6b0a19349c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6bf0c1f8991007a4081989f7facd1845 = $(`<div id="html_6bf0c1f8991007a4081989f7facd1845" style="width: 100.0%; height: 100.0%;"><b>Waterford</b><br>State: Louisiana<br>Assemblies: 2246</div>`)[0];
+                popup_5447d2d15a2202c1e8b44d6b0a19349c.setContent(html_6bf0c1f8991007a4081989f7facd1845);
+            
+        
+
+        circle_marker_7a1e2970d983e02b7c1323136a37e276.bindPopup(popup_5447d2d15a2202c1e8b44d6b0a19349c)
+        ;
+
+        
+    
+    
+            var circle_marker_3079d1450d721fefb3e0002aeb2920f7 = L.circleMarker(
+                [30.756667, -91.333333],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.144, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_fe6e77fc457273920bd523a8bdd3db1f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c9c78efd1c8de17d630bd1607296617d = $(`<div id="html_c9c78efd1c8de17d630bd1607296617d" style="width: 100.0%; height: 100.0%;"><b>River Bend</b><br>State: Louisiana<br>Assemblies: 4572</div>`)[0];
+                popup_fe6e77fc457273920bd523a8bdd3db1f.setContent(html_c9c78efd1c8de17d630bd1607296617d);
+            
+        
+
+        circle_marker_3079d1450d721fefb3e0002aeb2920f7.bindPopup(popup_fe6e77fc457273920bd523a8bdd3db1f)
+        ;
+
+        
+    
+    
+            var circle_marker_a6f667de4427d2735e64bf8739d244f9 = L.circleMarker(
+                [38.2389, -95.6889],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.024, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_ad9594a6f70c016995aa06511849c13e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_10eb080e0f3ae585901e71f17d4ce38e = $(`<div id="html_10eb080e0f3ae585901e71f17d4ce38e" style="width: 100.0%; height: 100.0%;"><b>Wolf Creek</b><br>State: Kansas<br>Assemblies: 2012</div>`)[0];
+                popup_ad9594a6f70c016995aa06511849c13e.setContent(html_10eb080e0f3ae585901e71f17d4ce38e);
+            
+        
+
+        circle_marker_a6f667de4427d2735e64bf8739d244f9.bindPopup(popup_ad9594a6f70c016995aa06511849c13e)
+        ;
+
+        
+    
+    
+            var circle_marker_93c84084b4b41bcf252c2caa54c48100 = L.circleMarker(
+                [42.1006, -91.7772],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.296, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_9762cded91bafe5cc73326dec87c8506 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f624926c59c68fa40634f62d7c505822 = $(`<div id="html_f624926c59c68fa40634f62d7c505822" style="width: 100.0%; height: 100.0%;"><b>Duane Arnold</b><br>State: Iowa<br>Assemblies: 3648</div>`)[0];
+                popup_9762cded91bafe5cc73326dec87c8506.setContent(html_f624926c59c68fa40634f62d7c505822);
+            
+        
+
+        circle_marker_93c84084b4b41bcf252c2caa54c48100.bindPopup(popup_9762cded91bafe5cc73326dec87c8506)
+        ;
+
+        
+    
+    
+            var circle_marker_ea682f58eaaaefb85becc7237af47b9e = L.circleMarker(
+                [42.4461, -87.8028],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.452, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_4317dda3199df7e997758c6706315ccc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c46e4f0ad2c9516f79b335f8c9dcabdd = $(`<div id="html_c46e4f0ad2c9516f79b335f8c9dcabdd" style="width: 100.0%; height: 100.0%;"><b>Zion</b><br>State: Illinois<br>Assemblies: 2226</div>`)[0];
+                popup_4317dda3199df7e997758c6706315ccc.setContent(html_c46e4f0ad2c9516f79b335f8c9dcabdd);
+            
+        
+
+        circle_marker_ea682f58eaaaefb85becc7237af47b9e.bindPopup(popup_4317dda3199df7e997758c6706315ccc)
+        ;
+
+        
+    
+    
+            var circle_marker_535ee0c70f287edda26840724dd04bfd = L.circleMarker(
+                [41.7264, -90.31],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.918, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_c554c3bfa3345861f49027a6a7e7d254 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a43ae12478e6d2cef58c6bf731b87990 = $(`<div id="html_a43ae12478e6d2cef58c6bf731b87990" style="width: 100.0%; height: 100.0%;"><b>Quad Cities</b><br>State: Illinois<br>Assemblies: 10959</div>`)[0];
+                popup_c554c3bfa3345861f49027a6a7e7d254.setContent(html_a43ae12478e6d2cef58c6bf731b87990);
+            
+        
+
+        circle_marker_535ee0c70f287edda26840724dd04bfd.bindPopup(popup_c554c3bfa3345861f49027a6a7e7d254)
+        ;
+
+        
+    
+    
+            var circle_marker_2a727f1e1d0cb36eb71b1b1d117ea81f = L.circleMarker(
+                [41.3894, -88.2533],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.768, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_eac2f1561bf02268ae537cc2da6b79e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ddb0ea7909a07380997b8b7d7ce70367 = $(`<div id="html_ddb0ea7909a07380997b8b7d7ce70367" style="width: 100.0%; height: 100.0%;"><b>Dresden</b><br>State: Illinois<br>Assemblies: 11884</div>`)[0];
+                popup_eac2f1561bf02268ae537cc2da6b79e3.setContent(html_ddb0ea7909a07380997b8b7d7ce70367);
+            
+        
+
+        circle_marker_2a727f1e1d0cb36eb71b1b1d117ea81f.bindPopup(popup_eac2f1561bf02268ae537cc2da6b79e3)
+        ;
+
+        
+    
+    
+            var circle_marker_145e759f98c0f7ed91939dc54786f8ad = L.circleMarker(
+                [40.1722, -88.835],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.616, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_eaca974de8b60a500a6349cc2568f826 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7f796ee571258c12a6f6064ec7fda4c2 = $(`<div id="html_7f796ee571258c12a6f6064ec7fda4c2" style="width: 100.0%; height: 100.0%;"><b>Clinton</b><br>State: Illinois<br>Assemblies: 4308</div>`)[0];
+                popup_eaca974de8b60a500a6349cc2568f826.setContent(html_7f796ee571258c12a6f6064ec7fda4c2);
+            
+        
+
+        circle_marker_145e759f98c0f7ed91939dc54786f8ad.bindPopup(popup_eaca974de8b60a500a6349cc2568f826)
+        ;
+
+        
+    
+    
+            var circle_marker_9457386e9089311aeeacc93e90cefdf8 = L.circleMarker(
+                [42.0742, -89.2819],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.182, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_29cb13b86ac8d2fb76f893762b02a886 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4449c50dcd078ba07c0d98385a7c58ea = $(`<div id="html_4449c50dcd078ba07c0d98385a7c58ea" style="width: 100.0%; height: 100.0%;"><b>Byron</b><br>State: Illinois<br>Assemblies: 4091</div>`)[0];
+                popup_29cb13b86ac8d2fb76f893762b02a886.setContent(html_4449c50dcd078ba07c0d98385a7c58ea);
+            
+        
+
+        circle_marker_9457386e9089311aeeacc93e90cefdf8.bindPopup(popup_29cb13b86ac8d2fb76f893762b02a886)
+        ;
+
+        
+    
+    
+            var circle_marker_325f3360ac4a1e72841003cf64678f3d = L.circleMarker(
+                [41.2436, -88.2292],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.784, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_cd41fcb2459750f1f8d040057f049811 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e27a3c124ff781e2253885732cb5274 = $(`<div id="html_6e27a3c124ff781e2253885732cb5274" style="width: 100.0%; height: 100.0%;"><b>Braidwood</b><br>State: Illinois<br>Assemblies: 3892</div>`)[0];
+                popup_cd41fcb2459750f1f8d040057f049811.setContent(html_6e27a3c124ff781e2253885732cb5274);
+            
+        
+
+        circle_marker_325f3360ac4a1e72841003cf64678f3d.bindPopup(popup_cd41fcb2459750f1f8d040057f049811)
+        ;
+
+        
+    
+    
+            var circle_marker_86c1276c634c984e99f9a9bf48fe9f23 = L.circleMarker(
+                [33.1433, -81.7606],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.902, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_56fa0524fd1c9abc938c688d364ce104 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ba1c852a69b65924e6a2c8ec737ccc81 = $(`<div id="html_ba1c852a69b65924e6a2c8ec737ccc81" style="width: 100.0%; height: 100.0%;"><b>Vogtle</b><br>State: Georgia<br>Assemblies: 3951</div>`)[0];
+                popup_56fa0524fd1c9abc938c688d364ce104.setContent(html_ba1c852a69b65924e6a2c8ec737ccc81);
+            
+        
+
+        circle_marker_86c1276c634c984e99f9a9bf48fe9f23.bindPopup(popup_56fa0524fd1c9abc938c688d364ce104)
+        ;
+
+        
+    
+    
+            var circle_marker_e3ffd91f0f609bfe7602df6734a9622d = L.circleMarker(
+                [31.9342, -82.3439],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.51, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_096496dd8c643879743bbe8e141a5c6e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b45ded816f51f5d5977015d66b0cf2ea = $(`<div id="html_b45ded816f51f5d5977015d66b0cf2ea" style="width: 100.0%; height: 100.0%;"><b>Hatch</b><br>State: Georgia<br>Assemblies: 10255</div>`)[0];
+                popup_096496dd8c643879743bbe8e141a5c6e.setContent(html_b45ded816f51f5d5977015d66b0cf2ea);
+            
+        
+
+        circle_marker_e3ffd91f0f609bfe7602df6734a9622d.bindPopup(popup_096496dd8c643879743bbe8e141a5c6e)
+        ;
+
+        
+    
+    
+            var circle_marker_e0c74c78bcbf9afdc47f37a575b07209 = L.circleMarker(
+                [25.4342, -80.3306],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.872, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_f5cf9dbb57bdef834b22be217913c935 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf945cad05089b04417d4c3ef5aa6af4 = $(`<div id="html_bf945cad05089b04417d4c3ef5aa6af4" style="width: 100.0%; height: 100.0%;"><b>Turkey Point</b><br>State: Florida<br>Assemblies: 3436</div>`)[0];
+                popup_f5cf9dbb57bdef834b22be217913c935.setContent(html_bf945cad05089b04417d4c3ef5aa6af4);
+            
+        
+
+        circle_marker_e0c74c78bcbf9afdc47f37a575b07209.bindPopup(popup_f5cf9dbb57bdef834b22be217913c935)
+        ;
+
+        
+    
+    
+            var circle_marker_cca76e7873bf8f7402c49d2950853d71 = L.circleMarker(
+                [27.3486, -80.2464],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.708, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_d31dafe16c660dfe807a7eb27455d176 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_525cdf670fc79dc79d667280a087c9f8 = $(`<div id="html_525cdf670fc79dc79d667280a087c9f8" style="width: 100.0%; height: 100.0%;"><b>Saint Lucie</b><br>State: Florida<br>Assemblies: 4354</div>`)[0];
+                popup_d31dafe16c660dfe807a7eb27455d176.setContent(html_525cdf670fc79dc79d667280a087c9f8);
+            
+        
+
+        circle_marker_cca76e7873bf8f7402c49d2950853d71.bindPopup(popup_d31dafe16c660dfe807a7eb27455d176)
+        ;
+
+        
+    
+    
+            var circle_marker_89cffb65ef587addf321d0db7699207a = L.circleMarker(
+                [28.9575, -82.5633],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_dff73460ac3d0aad2c095aab1016459c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_efe6900847e1d3a5b8a5fcac97ff6772 = $(`<div id="html_efe6900847e1d3a5b8a5fcac97ff6772" style="width: 100.0%; height: 100.0%;"><b>Crystal River</b><br>State: Florida<br>Assemblies: 1243</div>`)[0];
+                popup_dff73460ac3d0aad2c095aab1016459c.setContent(html_efe6900847e1d3a5b8a5fcac97ff6772);
+            
+        
+
+        circle_marker_89cffb65ef587addf321d0db7699207a.bindPopup(popup_dff73460ac3d0aad2c095aab1016459c)
+        ;
+
+        
+    
+    
+            var circle_marker_a0ea7435e483d16854c834662c408980 = L.circleMarker(
+                [41.3119, -72.1686],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.278, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_359a59119a9ccd75a5953dac05f16600 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a841bf82ac2dcd9787b418570f6a8ce3 = $(`<div id="html_a841bf82ac2dcd9787b418570f6a8ce3" style="width: 100.0%; height: 100.0%;"><b>Millstone</b><br>State: Connecticut<br>Assemblies: 3639</div>`)[0];
+                popup_359a59119a9ccd75a5953dac05f16600.setContent(html_a841bf82ac2dcd9787b418570f6a8ce3);
+            
+        
+
+        circle_marker_a0ea7435e483d16854c834662c408980.bindPopup(popup_359a59119a9ccd75a5953dac05f16600)
+        ;
+
+        
+    
+    
+            var circle_marker_9c5ef91af0f0223fa164d2148f56b79b = L.circleMarker(
+                [33.3689, -117.555],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.71, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_5cc22ed8bc5a32bee3a38f44d316eacb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_81f8a805a544b617e7900cb5a40b7670 = $(`<div id="html_81f8a805a544b617e7900cb5a40b7670" style="width: 100.0%; height: 100.0%;"><b>San Onofre</b><br>State: California<br>Assemblies: 3855</div>`)[0];
+                popup_5cc22ed8bc5a32bee3a38f44d316eacb.setContent(html_81f8a805a544b617e7900cb5a40b7670);
+            
+        
+
+        circle_marker_9c5ef91af0f0223fa164d2148f56b79b.bindPopup(popup_5cc22ed8bc5a32bee3a38f44d316eacb)
+        ;
+
+        
+    
+    
+            var circle_marker_7102b67aef088f3b307365f223764aa5 = L.circleMarker(
+                [35.2108, -120.8561],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.722, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_4227052c2c20021570932bb8b71e49c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ba932c22b95c03980b24f6cbb54b91c6 = $(`<div id="html_ba932c22b95c03980b24f6cbb54b91c6" style="width: 100.0%; height: 100.0%;"><b>Diablo Canyon</b><br>State: California<br>Assemblies: 3861</div>`)[0];
+                popup_4227052c2c20021570932bb8b71e49c1.setContent(html_ba932c22b95c03980b24f6cbb54b91c6);
+            
+        
+
+        circle_marker_7102b67aef088f3b307365f223764aa5.bindPopup(popup_4227052c2c20021570932bb8b71e49c1)
+        ;
+
+        
+    
+    
+            var circle_marker_773392d7c3ef5c157859e9945e62f235 = L.circleMarker(
+                [35.3103, -93.2314],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.176, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_b40655238b35a6f1bbb7c7fedf8dd835 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b2ae45f2b591271912e2348bd3c1a62 = $(`<div id="html_4b2ae45f2b591271912e2348bd3c1a62" style="width: 100.0%; height: 100.0%;"><b>Arkansas Nuclear</b><br>State: Arkansas<br>Assemblies: 4088</div>`)[0];
+                popup_b40655238b35a6f1bbb7c7fedf8dd835.setContent(html_4b2ae45f2b591271912e2348bd3c1a62);
+            
+        
+
+        circle_marker_773392d7c3ef5c157859e9945e62f235.bindPopup(popup_b40655238b35a6f1bbb7c7fedf8dd835)
+        ;
+
+        
+    
+    
+            var circle_marker_d5139fb670ff213e3ab2f89ca5d3ef33 = L.circleMarker(
+                [33.4025, -112.8556],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.65, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_f52a56bfa2ea441d97046cae04491cee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_303dc44a6aa6e97d6350244b0b238678 = $(`<div id="html_303dc44a6aa6e97d6350244b0b238678" style="width: 100.0%; height: 100.0%;"><b>Palo Verde</b><br>State: Arizona<br>Assemblies: 6825</div>`)[0];
+                popup_f52a56bfa2ea441d97046cae04491cee.setContent(html_303dc44a6aa6e97d6350244b0b238678);
+            
+        
+
+        circle_marker_d5139fb670ff213e3ab2f89ca5d3ef33.bindPopup(popup_f52a56bfa2ea441d97046cae04491cee)
+        ;
+
+        
+    
+    
+            var circle_marker_c5b016b9f79dc94667cb8d7673535b85 = L.circleMarker(
+                [31.2231, -85.1133],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.616, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_7c6d48cf857d107497377be7afe4db2b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a6546bdd9a73b64459786989884d7c2b = $(`<div id="html_a6546bdd9a73b64459786989884d7c2b" style="width: 100.0%; height: 100.0%;"><b>Farley</b><br>State: Alabama<br>Assemblies: 3808</div>`)[0];
+                popup_7c6d48cf857d107497377be7afe4db2b.setContent(html_a6546bdd9a73b64459786989884d7c2b);
+            
+        
+
+        circle_marker_c5b016b9f79dc94667cb8d7673535b85.bindPopup(popup_7c6d48cf857d107497377be7afe4db2b)
+        ;
+
+        
+    
+    
+            var circle_marker_bf3cdfa6af436a9708a1bcb92f18c15d = L.circleMarker(
+                [34.7039, -87.1186],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.3, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_1b97ee8a09b49f8be4a6f6b4e9e73a00 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3693613e69b1097f95c0297857db099f = $(`<div id="html_3693613e69b1097f95c0297857db099f" style="width: 100.0%; height: 100.0%;"><b>Browns Ferry</b><br>State: Alabama<br>Assemblies: 15150</div>`)[0];
+                popup_1b97ee8a09b49f8be4a6f6b4e9e73a00.setContent(html_3693613e69b1097f95c0297857db099f);
+            
+        
+
+        circle_marker_bf3cdfa6af436a9708a1bcb92f18c15d.bindPopup(popup_1b97ee8a09b49f8be4a6f6b4e9e73a00)
+        ;
+
+        
+    
+    
+            var circle_marker_8c0f364064594ad88f1b3aed972cf604 = L.circleMarker(
+                [43.56, -91.2314],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_c6680c2d3a8eca14dbce5d96999c8720 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b77d6960c96a2ca79e7f21f3bd8b24c4 = $(`<div id="html_b77d6960c96a2ca79e7f21f3bd8b24c4" style="width: 100.0%; height: 100.0%;"><b>Lacrosse</b><br>State: Wisconsin<br>Assemblies: 333</div>`)[0];
+                popup_c6680c2d3a8eca14dbce5d96999c8720.setContent(html_b77d6960c96a2ca79e7f21f3bd8b24c4);
+            
+        
+
+        circle_marker_8c0f364064594ad88f1b3aed972cf604.bindPopup(popup_c6680c2d3a8eca14dbce5d96999c8720)
+        ;
+
+        
+    
+    
+            var circle_marker_ca3d92601fa26d30b7710916c42f1354 = L.circleMarker(
+                [46.0383, -122.885],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_2db2f4d84551ba5ca649400ca393be5f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7eb061b369f35087c4a6c8890b6669c3 = $(`<div id="html_7eb061b369f35087c4a6c8890b6669c3" style="width: 100.0%; height: 100.0%;"><b>Trojan</b><br>State: Oregon<br>Assemblies: 790</div>`)[0];
+                popup_2db2f4d84551ba5ca649400ca393be5f.setContent(html_7eb061b369f35087c4a6c8890b6669c3);
+            
+        
+
+        circle_marker_ca3d92601fa26d30b7710916c42f1354.bindPopup(popup_2db2f4d84551ba5ca649400ca393be5f)
+        ;
+
+        
+    
+    
+            var circle_marker_2b184081ab36dea7f10ebb504077b21d = L.circleMarker(
+                [45.3589, -85.1972441],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_433cb8477469ad820f07a6a343764902 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f7dcd3c310326f4f70abfb9a22f6c57b = $(`<div id="html_f7dcd3c310326f4f70abfb9a22f6c57b" style="width: 100.0%; height: 100.0%;"><b>Big Rock Point</b><br>State: Michigan<br>Assemblies: 441</div>`)[0];
+                popup_433cb8477469ad820f07a6a343764902.setContent(html_f7dcd3c310326f4f70abfb9a22f6c57b);
+            
+        
+
+        circle_marker_2b184081ab36dea7f10ebb504077b21d.bindPopup(popup_433cb8477469ad820f07a6a343764902)
+        ;
+
+        
+    
+    
+            var circle_marker_9c76c94fb7f87cd9746dce75c2941f9e = L.circleMarker(
+                [42.7292, -72.9253],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_c76ea310361dfa4fa4d9a202a51a6e52 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fc6b80000d43cbbb98998ed950b6b4d3 = $(`<div id="html_fc6b80000d43cbbb98998ed950b6b4d3" style="width: 100.0%; height: 100.0%;"><b>Yankee Row</b><br>State: Massachusetts<br>Assemblies: 533</div>`)[0];
+                popup_c76ea310361dfa4fa4d9a202a51a6e52.setContent(html_fc6b80000d43cbbb98998ed950b6b4d3);
+            
+        
+
+        circle_marker_9c76c94fb7f87cd9746dce75c2941f9e.bindPopup(popup_c76ea310361dfa4fa4d9a202a51a6e52)
+        ;
+
+        
+    
+    
+            var circle_marker_95f83004f13937592c5422dda4911fae = L.circleMarker(
+                [43.9506, -69.6958],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_ea451d012659d66bd0a9ec126b10b0f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fbfa2e25b6c953dece8c5c39aeb29f93 = $(`<div id="html_fbfa2e25b6c953dece8c5c39aeb29f93" style="width: 100.0%; height: 100.0%;"><b>Maine Yankee</b><br>State: Maine<br>Assemblies: 1434</div>`)[0];
+                popup_ea451d012659d66bd0a9ec126b10b0f1.setContent(html_fbfa2e25b6c953dece8c5c39aeb29f93);
+            
+        
+
+        circle_marker_95f83004f13937592c5422dda4911fae.bindPopup(popup_ea451d012659d66bd0a9ec126b10b0f1)
+        ;
+
+        
+    
+    
+            var circle_marker_f5e73494dd803320fc11906bf6b792f7 = L.circleMarker(
+                [41.4822, -72.4983],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_50c4e5ad6ad05717c05338e04cc169e1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_572bfa5043b690ee18171d7444e351a3 = $(`<div id="html_572bfa5043b690ee18171d7444e351a3" style="width: 100.0%; height: 100.0%;"><b>Haddam Neck</b><br>State: Connecticut<br>Assemblies: 1019</div>`)[0];
+                popup_50c4e5ad6ad05717c05338e04cc169e1.setContent(html_572bfa5043b690ee18171d7444e351a3);
+            
+        
+
+        circle_marker_f5e73494dd803320fc11906bf6b792f7.bindPopup(popup_50c4e5ad6ad05717c05338e04cc169e1)
+        ;
+
+        
+    
+    
+            var circle_marker_2036b60e5190b4f11d72fe20025f46f6 = L.circleMarker(
+                [38.3453, -121.1217],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_8dc05325d0c75562ac6b7cda436b12fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c098463ff531cd62b878f960396b9dd4 = $(`<div id="html_c098463ff531cd62b878f960396b9dd4" style="width: 100.0%; height: 100.0%;"><b>Rancho Seco</b><br>State: California<br>Assemblies: 493</div>`)[0];
+                popup_8dc05325d0c75562ac6b7cda436b12fa.setContent(html_c098463ff531cd62b878f960396b9dd4);
+            
+        
+
+        circle_marker_2036b60e5190b4f11d72fe20025f46f6.bindPopup(popup_8dc05325d0c75562ac6b7cda436b12fa)
+        ;
+
+        
+    
+    
+            var circle_marker_433f6934c5a87389301d39ef36a4d7bd = L.circleMarker(
+                [40.7411, -124.2089],
+                {"bubblingMouseEvents": true, "color": "#d3e424", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3e424", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c4c8ba550ff5e588f3d948d3a1b504ea);
+        
+    
+        var popup_8867fac2d5d008a4e2218e949dfa0b20 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8da7a67ef634a07183b3119ee4c7fbf0 = $(`<div id="html_8da7a67ef634a07183b3119ee4c7fbf0" style="width: 100.0%; height: 100.0%;"><b>Humboldt Bay</b><br>State: California<br>Assemblies: 390</div>`)[0];
+                popup_8867fac2d5d008a4e2218e949dfa0b20.setContent(html_8da7a67ef634a07183b3119ee4c7fbf0);
+            
+        
+
+        circle_marker_433f6934c5a87389301d39ef36a4d7bd.bindPopup(popup_8867fac2d5d008a4e2218e949dfa0b20)
+        ;
+
+        
+    
+</script>
+</html>
