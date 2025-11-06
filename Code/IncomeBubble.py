@@ -36,8 +36,6 @@ sorteddf['hover_text'] = sorteddf.apply(
 )
 #Graph
 bubblefig = go.Figure()
-
-
 bubblefig.add_trace(go.Scatter(
     x=sorteddf['household_income_median_state'], 
     y=sorteddf['state_abbrev'],
@@ -55,8 +53,8 @@ bubblefig.add_trace(go.Scatter(
     text=sorteddf['hover_text'],
     name='States'
 ))
-
-
+#Format
+bubblefig.update_yaxes(showticklabels=False) 
 bubblefig.update_layout(
     title_text = 'Median Household Income around Storage Site compared to State Median',
     height=800
