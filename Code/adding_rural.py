@@ -17,6 +17,6 @@ df_clean = df[keep_cols].rename(columns={"Urban/rural description": "Urban_Rural
 df_clean.to_csv("Cleaned_US_Nuclear_fuel_final.csv", index=False)
 
 
-
 print("✅ Cleaned file saved as 'Cleaned_US_Nuclear_fuel_final.csv'")
 print(df_clean.head())
+
