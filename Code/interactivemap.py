@@ -1,31 +1,136 @@
 import pandas as pd
 import folium
-from folium import CircleMarker
+from folium import CircleMarker, Tooltip
+import os
 
-# 1. Load the dataset, change to ur own filepath
-df = pd.read_csv("CSVs/Cleaned_US_Nuclear_Fuel_Locations.csv")
+#Load Data from CSV
+df = pd.read_csv("data/Cleaned_US_Nuclear_fuel_rural.csv")
 
-# 2. Filter out rows missing coordinates or Site_Assy
-map_data = df.dropna(subset=["Latitude", "Longitude", "Site_IU"])
+map_data = df.dropna(subset=["Latitude", "Longitude"])
 
-# 3. Create a base map centered on the U.S.
+site_iu_series = map_data["Site_IU"]
+min_iu = site_iu_series.min(skipna=True)
+max_iu = site_iu_series.max(skipna=True)
+
+def compute_radius(site_iu, min_iu=min_iu, max_iu=max_iu,
+                   min_r=4, max_r=20):
+    """
+    Linearly scale Site_IU to a radius between min_r and max_r.
+    Assumes site_iu is not NaN. For NaN there is a black dot that is on the map.
+    """
+    # Avoid divide-by-zero if min == max
+    if min_iu is None or max_iu is None or max_iu == min_iu:
+        norm = 0.5
+    else:
+        norm = (site_iu - min_iu) / (max_iu - min_iu)
+
+    return min_r + norm * (max_r - min_r)
+
+#Use Map
 m = folium.Map(location=[39.5, -98.35], zoom_start=5, tiles="CartoDB positron")
 
-# 4. Add a marker for each site
 for _, row in map_data.iterrows():
-    CircleMarker(
-        location=[row["Latitude"], row["Longitude"]],
-        radius=max(3, row["Site_IU"] / 500),  # Scale size by assemblies
-        color='#d3e424',
-        fill=True,
-        fill_opacity=0.6,
-        popup=folium.Popup(
-            f"<b>{row['Site']}</b><br>"
-            f"State: {row['State']}<br>"
-            f"Assemblies: {row['Site_IU']:.0f}"
-        )
-    ).add_to(m)
+    site_name = row["Site"]
 
-# 5. Save and show map
-m.save("nuclear_sites_map_recolor.html")
+    # --------- make a safe filename version of the site name ---------
+    safe_site_name = site_name.replace("/", "_").replace("\\", "_") #Fix Hope Creek/Salem issues
+
+    image_filename = f"{safe_site_name}_combined.png"
+
+    fs_image_path = os.path.join("site_plots", image_filename)
+
+    image_url = f"site_plots/{image_filename}".replace(" ", "%20")
+
+    if os.path.exists(fs_image_path):
+        popup_html = f"""
+        <div style="text-align:center;">
+            <img src="{image_url}" style="width:600px; height:auto; display:block; margin:0 auto;" />
+        </div>
+        """
+    else:
+        popup_html = f"""
+        <div style="text-align:center;">
+            <p>No image found for this site.</p>
+        </div>
+        """
+
+    popup = folium.Popup(popup_html, max_width=1000)
+
+    #--------- marker radius & color from Site_IU ---------
+    site_iu = row["Site_IU"]
+
+    if pd.isna(site_iu):
+        radius_val = 3
+        color_val = "#000000" #No IU Data
+    else:
+        radius_val = compute_radius(site_iu)
+        color_val = "#d3e424" #Regular IU Data
+
+    marker = CircleMarker(
+        location=[row["Latitude"], row["Longitude"]],
+        radius=radius_val,
+        color=color_val,
+        fill=True,
+        fill_color=color_val,
+        fill_opacity=0.6,
+        popup=popup
+    )
+
+    tooltip_html = f"<span style='font-size:12px; font-weight:bold;'>{site_name}</span>"
+    tooltip = Tooltip(tooltip_html, sticky=True)
+
+    marker.add_child(tooltip)
+    m.add_child(marker)
+
+#IU Marker size
+small_iu = min_iu
+mid_iu = (min_iu + max_iu) / 2
+large_iu = max_iu
+
+small_r = compute_radius(small_iu)
+mid_r = compute_radius(mid_iu)
+large_r = compute_radius(large_iu)
+
+legend_html = f"""
+<div style="
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    z-index: 9999;
+    background-color: white;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 1.2;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+">
+    <b>Initial Uranium in Metric Tons (MT)</b><br>
+    <div style="margin-top:6px;">
+        <div style="display:flex; align-items:center; margin-bottom:4px;">
+            <div style="width:{2*small_r}px; height:{2*small_r}px;
+                        border-radius:50%; background:#d3e424; margin-right:6px;"></div>
+            <span>~{small_iu:.0f} MT</span>
+        </div>
+        <div style="display:flex; align-items:center; margin-bottom:4px;">
+            <div style="width:{2*mid_r}px; height:{2*mid_r}px;
+                        border-radius:50%; background:#d3e424; margin-right:6px;"></div>
+            <span>~{mid_iu:.0f} MT</span>
+        </div>
+        <div style="display:flex; align-items:center; margin-bottom:4px;">
+            <div style="width:{2*large_r}px; height:{2*large_r}px;
+                        border-radius:50%; background:#d3e424; margin-right:6px;"></div>
+            <span>~{max_iu:.0f} MT</span>
+        </div>
+        <div style="display:flex; align-items:center;">
+            <div style="width:{2*small_r}px; height:{2*small_r}px;
+                        border-radius:50%; background:#000000; margin-right:6px;"></div>
+            <span>~No Uranium Data</span>
+        </div>
+    </div>
+</div>
+"""
+
+m.get_root().html.add_child(folium.Element(legend_html))
+m.save("IU_nuclearSiteMap.html")
 m

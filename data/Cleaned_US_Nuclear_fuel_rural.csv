@@ -1,7 +1,6 @@
 Site,State,Storage,Type,Latitude,Longitude,Dry_Assy,Dry_IU,Casks,Pool_Assy,Pool_IU,Site_Assy,Site_IU,Urban_Rural
-Argonne National Lab,Illinois,Dry,Storage Facility,41.72,-87.9783,,,,,,,,Mixed
-Savannah River Site,Georgia,Dry/Wet,Storage Facility,33.3403,-81.7453,,,,,,,,Rural
-BWX Technologies - Fuel Cycle Facility,Virginia,Wet,Other,37.403611,-79.77,37.401846,-79.773983,0.96,rooftop,1237 Villamont Church Rd,,"Blue Ridge, VA 24064",No
+Argonne National Lab,Illinois,Dry,Storage Facility,41.72,-87.9783,,,,,,,NaN,Mixed
+Savannah River Site,Georgia,Dry/Wet,Storage Facility,33.3403,-81.7453,,,,,,,NaN,Rural
 Point Beach,Wisconsin,Dry/Wet,NPP,44.2811,-87.5367,1694.0,643.09,56.0,1134,443.57,2828.0,1086.66,Mixed
 Kewaunee,Wisconsin,Dry/Wet,NPP,44.3422,-87.5361,1335.0,518.7,38.0,0,0,1335.0,518.7,Rural
 Columbia Generating Station,Washington,Dry/Wet,NPP,46.4711,-119.3339,3672.0,645.63,54.0,1192,216.19,4864.0,861.82,
@@ -50,7 +49,7 @@ Wolf Creek,Kansas,Wet,NPP,38.2389,-95.6889,185.0,84.39,5.0,1827,838.63,2012.0,92
 Duane Arnold,Iowa,Dry/Wet,NPP,42.1006,-91.7772,3648.0,662.64,60.0,0,0,3648.0,662.64,Mixed
 Zion,Illinois,Dry,NPP,42.4461,-87.8028,2226.0,1019.41,61.0,-,-,2226.0,1019.41,Mixed
 Quad Cities,Illinois,Dry/Wet,NPP,41.7264,-90.31,4692.0,831.74,69.0,6267,1108.26,10959.0,1940.00,Rural
-La Salle,Illinois,Dry/Wet,NPP,41.2456,-88.6692,,,,,,,,Mixed
+La Salle,Illinois,Dry/Wet,NPP,41.2456,-88.6692,,,,,,,NaN,Mixed
 Dresden,Illinois,Dry/Wet,NPP,41.3894,-88.2533,5365.0,940.8,78.0,5519,972.86,11884.0,1913.66,Mixed
 Clinton,Illinois,Wet,NPP,40.1722,-88.835,1602.0,291.0,18.0,2706,492.48,4308.0,783.48,Mixed
 Byron,Illinois,Dry/Wet,NPP,42.0742,-89.2819,1536.0,647.44,48.0,2555,1072.78,4091.0,1720.22,Mixed
@@ -72,12 +71,12 @@ Trojan,Oregon,Dry,ISFSI,46.0383,-122.885,790.0,359.26,34.0,,,790.0,359.26,Mixed
 Big Rock Point,Michigan,Dry,ISFSI,45.3589,-85.1972441,441.0,57.91,7.0,,,441.0,57.91,Mixed
 Yankee Row,Massachusetts,Dry,ISFSI,42.7292,-72.9253,533.0,127.13,15.0,,,533.0,127.13,Rural
 Maine Yankee,Maine,Dry,ISFSI,43.9506,-69.6958,1434.0,542.26,60.0,,,1434.0,542.26,Rural
-Morris,Illinois,Wet,ISFSI,41.3897,-88.2681,,,,,,,,Mixed
+Morris,Illinois,Wet,ISFSI,41.3897,-88.2681,,,,,,,NaN,Mixed
 Haddam Neck,Connecticut,Dry,ISFSI,41.4822,-72.4983,1019.0,413.66,40.0,,,1019.0,413.66,Mixed
-Fort St. Vrain,Colorado,Dry,ISFSI,40.2456,-104.8775,,,,,,,,Rural
+Fort St. Vrain,Colorado,Dry,ISFSI,40.2456,-104.8775,,,,,,,NaN,Rural
 Rancho Seco,California,Dry,ISFSI,38.3453,-121.1217,493.0,228.38,21.0,,,493.0,228.38,Rural
 Humboldt Bay,California,Dry,ISFSI,40.7411,-124.2089,390.0,28.94,5.0,,,390.0,28.94,Mixed
-Hanford Site,Washington,Dry/Wet,Government Facility/Multiple,46.6475,-119.5986,,,,,,,,
-Oak Ridge Reservation,Tennessee,Wet,Government Facility/Multiple,35.93,-84.31,,,,,,,,Rural
-Sandia National Lab,New Mexico,Dry,Government Facility/Multiple,35.06,-105.5358,,,,,,,,
-Idaho National Lab,Idaho,Dry/Wet,Government Facility/Multiple,43.52,-112.5986,,,,,,,,Rural
+Hanford Site,Washington,Dry/Wet,Government Facility/Multiple,46.6475,-119.5986,,,,,,,NaN,
+Oak Ridge Reservation,Tennessee,Wet,Government Facility/Multiple,35.93,-84.31,,,,,,,NaN,Rural
+Sandia National Lab,New Mexico,Dry,Government Facility/Multiple,35.06,-105.5358,,,,,,,NaN,
+Idaho National Lab,Idaho,Dry/Wet,Government Facility/Multiple,43.52,-112.5986,,,,,,,NaN,Rural
