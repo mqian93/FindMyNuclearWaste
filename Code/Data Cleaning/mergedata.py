@@ -1,3 +1,8 @@
+"""
+Joins with the primary dataset by merging nuclear fuel site data with demographic data via matching by coordinates.
+Date: 11/3/25
+Author: Melody Qian
+"""
 import pandas as pd
 
 #import datasets

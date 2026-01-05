@@ -1,8 +1,14 @@
+"""
+Compares the mass of U.S. annual spent nuclear fuel to familiar heavy objects using a bar chart.
+Has labels to display the relative scale of how much weight 2000 metric tons is. 
+Date: 11/8/25
+Author: Melody Qian
+"""
+
 import pandas as pd
 import plotly.graph_objects as go
 import os
 
-# Data
 data = [
     ("African Bush Elephant", 6),
     ("Semi-Truck + Trailer", 36),
@@ -13,20 +19,19 @@ data = [
 
 df = pd.DataFrame(data, columns=["Item", "Metric Tons"])
 
-# Figure
 fig = go.Figure()
 
-# Bar trace with uniform royal blue
+# Visual comparison of weights; last bar represents annual spent nuclear fuel mass
 fig.add_trace(go.Bar(
     x=df["Item"],
     y=df["Metric Tons"],
     text=[f"{y:,} tons" for y in df["Metric Tons"]],
     textposition="outside",
-    marker_color="#81c500",  # royal blue
+    marker_color="#81c500",
     hovertemplate="<b>%{x}</b><br><b>Weight:</b> %{y:,} metric tons<extra></extra>"
 ))
 
-# Annotation for nuclear fuel
+# Callout translating nuclear fuel mass into more intuitive equivalents
 fig.add_annotation(
     x="U.S. Annual Spent Nuclear Fuel",
     y=2000,
@@ -38,7 +43,6 @@ fig.add_annotation(
     ay=-50
 )
 
-# Layout styling
 fig.update_layout(
     title=dict(
         text="<b>How Heavy Is Spent Nuclear Fuel?</b><br><sup>Comparing radioactive waste to familiar massive objects</sup>",
@@ -67,9 +71,7 @@ fig.update_layout(
     font=dict(size=14),
 )
 
-# Slight outline for bar definition
 fig.update_traces(marker_line_width=0.8, marker_line_color="#0b0c10")
 
 os.chdir('/Users/melodyqian/Documents/GitHub/FindMyNuclearWaste/Visuals')
 fig.write_html('Weight.html')
-

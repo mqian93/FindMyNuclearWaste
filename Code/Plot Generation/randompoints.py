@@ -1,3 +1,10 @@
+"""
+Generates random background points across U.S. Census block groups (2024 shapefiles).
+Sampling is proportional to block-group land area, then one random point is drawn inside each selected polygon.
+Date: 11/8/25
+Author: Melody Qian
+"""
+
 #Import Modules
 import geopandas as gpd
 import pandas as pd

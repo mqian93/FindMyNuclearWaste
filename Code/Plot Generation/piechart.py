@@ -1,3 +1,10 @@
+"""
+Displays statistics of nuclear waste sites using a pie chart.
+The statistics include the distribution of storage types and urban–rural classifications.
+Date: 11/6/25
+Author: Melody Qian
+"""
+
 #import modules
 import plotly.graph_objects as go
 import pandas as pd

@@ -1,3 +1,10 @@
+"""
+Tests state-level demographic and economic data from the U.S. Census ACS 5-year API (2023).
+This file cleans, renames, and formats the variables into a CSV file.
+Date: 10/26/25
+Author: Suchit Basineni
+"""
+
 import requests
 import pandas as pd
 
@@ -17,10 +24,10 @@ columns = data[0]
 rows = data[1:]
 df = pd.DataFrame(rows, columns=columns)
 
-# Drop the 'state' FIPS column returned by the API
+# Remove state FIPS code returned by the API
 df = df.drop(columns=["state"], errors="ignore")
 
-# Rename columns for clarity
+# Rename ACS variable codes to readable column names
 df = df.rename(columns={
     "NAME": "state_name",
     "DP04_0089E": "house_value_median",
@@ -36,7 +43,7 @@ df = df.rename(columns={
     "DP05_0052PE": "pacific_percent"
 })
 
-# Add state abbreviations
+# Map full state names to postal abbreviations
 state_abbrev = {
     'Alabama':'AL','Alaska':'AK','Arizona':'AZ','Arkansas':'AR','California':'CA',
     'Colorado':'CO','Connecticut':'CT','Delaware':'DE','District of Columbia':'DC',
@@ -54,7 +61,7 @@ state_abbrev = {
 
 df["state_abbrev"] = df["state_name"].map(state_abbrev)
 
-# Reorder columns for readability
+# Reorder columns for consistency across project datasets
 df = df[[
     "state_name", "state_abbrev",
     "house_value_median", "household_income_median", "age_median",
@@ -63,7 +70,4 @@ df = df[[
     "asian_percent", "pacific_percent"
 ]]
 
-# Save to CSV (no index)
 df.to_csv("CSVs/State_Level_Demographics.csv", index=False)
-
-print("✅ Clean CSV saved without index or 'state' column.")
