@@ -1,3 +1,10 @@
+"""
+This plot includes a timescale of nuclear waste radioactivity relative to major historical events.
+A bar chart is used to highlight how nuclear waste statys radioactive far longer than human history.
+Date: 11/8/25
+Author: Melody Qian
+"""
+
 import pandas as pd
 import plotly.graph_objects as go
 import os

@@ -1,3 +1,11 @@
+"""
+Generates demographic summary plots for each of the nuclear fuel locations.
+Creates a combined image (race pie chart, Hispanic share, housing occupancy) for each site
+and is used in interactive map popups.
+Date: 11/9/25
+Author: Suchit Basineni
+"""
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -5,23 +13,20 @@ import os
 import re
 from matplotlib.gridspec import GridSpec
 
-# Load data
 fuel_df = pd.read_csv("CSVs/Cleaned_US_Nuclear_Fuel_Locations.csv")
 demo_df = pd.read_csv("CSVs/State_Level_Demographics_filtered.csv")
 
-# Create output folder
 os.makedirs("site_plots", exist_ok=True)
 
 def sanitize_filename(name):
     """Remove or replace illegal filename characters."""
     return re.sub(r'[\\/*?:"<>|]', "_", str(name))
 
-# Loop through each site
 for _, site in fuel_df.iterrows():
     state = site['State']
     site_name = sanitize_filename(site['Site'])
 
-    # Match state demographics
+    # Match each site to its state's demographic row (by name first, then abbreviation fallback)
     demo = demo_df[demo_df['state_name'].str.contains(state, case=False, na=False)]
     if demo.empty:
         demo = demo_df[demo_df['state_abbrev'].str.fullmatch(state.strip(), case=False, na=False)]
@@ -30,17 +35,15 @@ for _, site in fuel_df.iterrows():
         continue
     demo = demo.iloc[0]
 
-    # --- Create figure layout ---
     fig = plt.figure(figsize=(10, 4))
     fig.suptitle(f"{site['Site']} — {state}", fontsize=12, y=1.03)
 
-    # Create GridSpec layout: left = pie chart, right = 2 stacked bar charts
     gs = GridSpec(2, 2, width_ratios=[1, 1.2], height_ratios=[1, 1], figure=fig)
-    ax_pie = fig.add_subplot(gs[:, 0])      # full left column
-    ax_hisp = fig.add_subplot(gs[0, 1])     # top-right
-    ax_housing = fig.add_subplot(gs[1, 1])  # bottom-right
+    ax_pie = fig.add_subplot(gs[:, 0])
+    ax_hisp = fig.add_subplot(gs[0, 1])
+    ax_housing = fig.add_subplot(gs[1, 1])
 
-    # ========== 1️⃣ PIE CHART ==========
+    # Race pie chart: collapse tiny categories and fill missing share as Unknown
     races = {
         "White": demo["white_percent"],
         "Black": demo["black_percent"],
@@ -76,10 +79,9 @@ for _, site in fuel_df.iterrows():
         loc="center left", bbox_to_anchor=(1, 0.5), fontsize=7
     )
 
-    # ========= 2️⃣ BAR CHARTS (stacked smaller) =========
     bar_height = 0.3
 
-    # Hispanic vs Non-Hispanic
+    # Hispanic share is modeled as Latino vs Non-Hispanic (100 - Latino)
     hispanic = demo["latino_percent"]
     nonhispanic = 100 - hispanic
     ax_hisp.barh(["Population"], [hispanic], color="orange", label="Hispanic", height=bar_height)
@@ -90,7 +92,7 @@ for _, site in fuel_df.iterrows():
     ax_hisp.legend(fontsize=7, loc="upper right")
     ax_hisp.set_yticks([])
 
-    # Occupied vs Vacant Housing
+    # Housing occupancy is currently simulated (replace with real occupied/vacant fields if available)
     occupied = np.random.uniform(85, 95)
     vacant = 100 - occupied
     ax_housing.barh(["Housing"], [occupied], color="green", label="Occupied", height=bar_height)
@@ -101,7 +103,6 @@ for _, site in fuel_df.iterrows():
     ax_housing.legend(fontsize=7, loc="upper right")
     ax_housing.set_yticks([])
 
-    # Final layout adjustments and save
     plt.tight_layout()
     plt.savefig(f"site_plots/{site_name}_combined.png", bbox_inches="tight", dpi=150)
     plt.close()

@@ -1,3 +1,9 @@
+"""
+Compares racial/ethnic demographics on the state level vs the areas surrounding
+nuclear storage sites by using a bar chart.
+Date: 11/6/25
+Author: Melody Qian
+"""
 #Import modules
 import plotly.express as px
 import plotly.graph_objects as go
