@@ -216,8 +216,8 @@ for _, site in fuel_df.iterrows():
     # Hispanic vs Non-Hispanic (Latino percent used as proxy per your original)
     hispanic = float(demo.get("latino_percent", 0))
     nonhispanic = 100 - hispanic
-    ax_hisp.barh([""], [hispanic], label="Hispanic", height=bar_height)
-    ax_hisp.barh([""], [nonhispanic], left=[hispanic], label="Non-Hispanic", height=bar_height)
+    ax_hisp.barh([""], [hispanic], label="Hispanic", height=bar_height,color="#C0E344")
+    ax_hisp.barh([""], [nonhispanic], left=[hispanic], label="Non-Hispanic", height=bar_height,color="#2BA900")
     ax_hisp.set_xlim(0, 100)
     ax_hisp.set_xlabel("Percent")
     ax_hisp.set_title("Hispanic vs Non-Hispanic", fontsize=9, pad=8)
@@ -227,8 +227,8 @@ for _, site in fuel_df.iterrows():
     # Housing occupancy (simulated)
     occupied = float(np.random.uniform(85, 95))
     vacant = 100 - occupied
-    ax_housing.barh([""], [occupied], label="Occupied", height=bar_height)
-    ax_housing.barh([""], [vacant], left=[occupied], label="Vacant/Unknown", height=bar_height)
+    ax_housing.barh([""], [occupied], label="Occupied", height=bar_height,color="#C0E344")
+    ax_housing.barh([""], [vacant], left=[occupied], label="Vacant/Unknown", height=bar_height,color="#2BA900")
     ax_housing.set_xlim(0, 100)
     ax_housing.set_xlabel("Percent")
     ax_housing.set_title("Occupied vs Vacant Housing", fontsize=9, pad=8)
@@ -250,7 +250,7 @@ for _, site in fuel_df.iterrows():
         dens   = pd.to_numeric(econ.get("PopulationDensity"), errors="coerce")
 
     # Income (ticks in $k, label in full dollars)
-    ax_income.barh([""], [income])
+    ax_income.barh([""], [income],color="#85C435")
     ax_income.set_xlim(0, income_xlim)
     ax_income.xaxis.set_major_formatter(FuncFormatter(dollars_k))  # ✅ SHORT ticks
     ax_income.set_title("Median Household Income", fontsize=9, pad=8)
@@ -259,7 +259,7 @@ for _, site in fuel_df.iterrows():
     clean_axis(ax_income)
 
     # Home value (ticks in $k, label in full dollars)
-    ax_home.barh([""], [home])
+    ax_home.barh([""], [home],color="#85C435")
     ax_home.set_xlim(0, home_xlim)
     ax_home.xaxis.set_major_formatter(FuncFormatter(dollars_k))    # ✅ SHORT ticks
     ax_home.set_title("Median Home Value", fontsize=9, pad=8)
@@ -268,7 +268,7 @@ for _, site in fuel_df.iterrows():
     clean_axis(ax_home)
 
     # Poverty rate
-    ax_pov.barh([""], [pov_pct])
+    ax_pov.barh([""], [pov_pct],color="#85C435")
     ax_pov.set_xlim(0, pov_xlim)
     ax_pov.set_title("Poverty Rate", fontsize=9, pad=8)
     ax_pov.set_yticks([])
@@ -277,7 +277,7 @@ for _, site in fuel_df.iterrows():
     clean_axis(ax_pov)
 
     # Density
-    ax_dens.barh([""], [dens])
+    ax_dens.barh([""], [dens], color="#85C435")
     ax_dens.set_xlim(0, dens_xlim)
     ax_dens.set_title("Population Density", fontsize=9, pad=8)
     ax_dens.set_xlabel("People / sq mi")
