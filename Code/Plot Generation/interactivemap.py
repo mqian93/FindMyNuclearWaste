@@ -10,7 +10,7 @@ import folium
 from folium import CircleMarker, Tooltip
 import os
 
-df = pd.read_csv("data/Cleaned_US_Nuclear_fuel_rural.csv")
+df = pd.read_csv("data/Final Datasets/Cleaned_US_Nuclear_fuel_rural.csv")
 
 map_data = df.dropna(subset=["Latitude", "Longitude"])
 
