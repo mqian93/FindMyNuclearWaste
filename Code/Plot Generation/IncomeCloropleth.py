@@ -70,6 +70,7 @@ fig.add_trace(scatter_trace)
 fig.update_layout(
     title_text='Median Household Income around Storage Site compared to State Median',
     geo_scope='usa',
+    width=900
 )
 
 fig.write_html("IncomeCloropleth.html")
